@@ -1,0 +1,6 @@
+{
+  "high_risk_ratio": 1.0,
+  "medium_risk_ratio": 0.75,
+  "absolute_expiry_alert_days": 180,
+  "absolute_alert_risk_level": "Medium"
+}

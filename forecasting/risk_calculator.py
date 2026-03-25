@@ -51,6 +51,12 @@ class RiskCalculator:
             risk = "Medium"
         else:
             risk = "Low"
+
+        # Absolute expiry alert (overrides risk if days until expiry <= threshold)
+        alert_days = self.config.get('absolute_expiry_alert_days')
+        alert_level = self.config.get('absolute_alert_risk_level', 'Medium')
+        if alert_days and days_until <= alert_days:
+            risk = alert_level
         
         # Friendly message mapping
         risk_messages = {
