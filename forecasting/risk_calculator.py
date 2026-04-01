@@ -14,6 +14,18 @@ class RiskCalculator:
         self.forecaster = forecaster
         self.today = datetime.now().date()
         self.inventory_df = None
+        
+        # Load configuration (FIX ADDED HERE)
+        config_path = os.path.join(data_dir, '..', 'risk_config.json')
+        if os.path.exists(config_path):
+            with open(config_path, 'r') as f:
+                self.config = json.load(f)
+        else:
+            # Default config if file not found
+            self.config = {
+                'absolute_expiry_alert_days': 180,
+                'absolute_alert_risk_level': 'Medium'
+            }
     
     def load_inventory(self, preprocessed=False):
         """Load inventory data. If preprocessed, expect cleaned columns."""
@@ -53,6 +65,7 @@ class RiskCalculator:
             risk = "Low"
 
         # Absolute expiry alert (overrides risk if days until expiry <= threshold)
+        # FIX ADDED HERE: Use self.config with default fallback
         alert_days = self.config.get('absolute_expiry_alert_days')
         alert_level = self.config.get('absolute_alert_risk_level', 'Medium')
         if alert_days and days_until <= alert_days:

@@ -1,0 +1,65 @@
+[
+  {
+    "medicine_name": "Paracetamol",
+    "forecast_summary": {
+      "average_daily_demand": 27,
+      "total_30_day_forecast": 804,
+      "MAE": 5.19
+    },
+    "batches": [
+      {
+        "batch_id": "PAR_001",
+        "batch_name": "Batch A (exp May 2024)",
+        "current_stock": 329,
+        "days_until_expiry": 25,
+        "expiry_date": "2024-05-15",
+        "forecasted_daily_demand": 27,
+        "estimated_days_to_sell": 12,
+        "risk_level": "High",
+        "risk_message": "⚠️ This batch expires in 25 days! Consider discounting or transferring to avoid waste."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Amoxicillin",
+    "forecast_summary": {
+      "average_daily_demand": 15,
+      "total_30_day_forecast": 450,
+      "MAE": 3.2
+    },
+    "batches": [
+      {
+        "batch_id": "AMO_001",
+        "batch_name": "Batch B (exp Aug 2024)",
+        "current_stock": 200,
+        "days_until_expiry": 120,
+        "expiry_date": "2024-08-20",
+        "forecasted_daily_demand": 15,
+        "estimated_days_to_sell": 13,
+        "risk_level": "Low",
+        "risk_message": "✅ Stock is adequate. No immediate action needed."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Ibuprofen",
+    "forecast_summary": {
+      "average_daily_demand": 42,
+      "total_30_day_forecast": 1260,
+      "MAE": 8.5
+    },
+    "batches": [
+      {
+        "batch_id": "IBU_001",
+        "batch_name": "Batch C (exp Mar 2025)",
+        "current_stock": 500,
+        "days_until_expiry": 180,
+        "expiry_date": "2025-03-10",
+        "forecasted_daily_demand": 42,
+        "estimated_days_to_sell": 12,
+        "risk_level": "Low",
+        "risk_message": "✅ Stock is adequate. No immediate action needed."
+      }
+    ]
+  }
+]

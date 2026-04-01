@@ -1,0 +1,151 @@
+medicine_name,batch_id,batch_name,current_stock,expiry_date,days_until_expiry
+Paracetamol,Par_0_202409,Batch 1 (exp Mar 2025),564,2025-03-25,0
+Paracetamol,Par_1_202409,Batch 2 (exp Oct 2024),564,2024-10-26,0
+Paracetamol,Par_2_202409,Batch 3 (exp Nov 2024),565,2024-11-10,0
+Dolo 650,Dol_0_202409,Batch 1 (exp Nov 2024),297,2024-11-10,0
+Dolo 650,Dol_1_202409,Batch 2 (exp Oct 2024),297,2024-10-26,0
+Dolo 650,Dol_2_202409,Batch 3 (exp Oct 2024),297,2024-10-11,0
+Combiflam,Com_0_202409,Batch 1 (exp Oct 2024),246,2024-10-26,0
+Combiflam,Com_1_202409,Batch 2 (exp Nov 2024),246,2024-11-10,0
+Combiflam,Com_2_202409,Batch 3 (exp Oct 2024),247,2024-10-11,0
+Aspirin,Asp_0_202409,Batch 1 (exp Mar 2025),75,2025-03-25,0
+Aspirin,Asp_1_202409,Batch 2 (exp Dec 2024),75,2024-12-25,0
+Aspirin,Asp_2_202409,Batch 3 (exp Dec 2024),76,2024-12-25,0
+Amoxicillin,Amo_0_202409,Batch 1 (exp Jun 2025),115,2025-06-23,0
+Amoxicillin,Amo_1_202409,Batch 2 (exp Nov 2024),115,2024-11-10,0
+Amoxicillin,Amo_2_202409,Batch 3 (exp Sep 2025),117,2025-09-26,0
+Azithromycin,Azi_0_202409,Batch 1 (exp Dec 2024),152,2024-12-25,0
+Azithromycin,Azi_1_202409,Batch 2 (exp Sep 2025),152,2025-09-26,0
+Azithromycin,Azi_2_202409,Batch 3 (exp Dec 2024),154,2024-12-25,0
+Ciprofloxacin,Cip_0_202409,Batch 1 (exp Dec 2024),132,2024-12-25,0
+Ciprofloxacin,Cip_1_202409,Batch 2 (exp Nov 2024),132,2024-11-10,0
+Ciprofloxacin,Cip_2_202409,Batch 3 (exp Mar 2025),132,2025-03-25,0
+Doxycycline,Dox_0_202409,Batch 1 (exp Sep 2025),117,2025-09-26,0
+Doxycycline,Dox_1_202409,Batch 2 (exp Sep 2025),117,2025-09-26,0
+Doxycycline,Dox_2_202409,Batch 3 (exp Oct 2024),118,2024-10-11,0
+Cetirizine,Cet_0_202409,Batch 1 (exp Jun 2025),262,2025-06-23,0
+Cetirizine,Cet_1_202409,Batch 2 (exp Mar 2025),262,2025-03-25,0
+Cetirizine,Cet_2_202409,Batch 3 (exp Dec 2024),264,2024-12-25,0
+Levocetirizine,Lev_0_202409,Batch 1 (exp Mar 2025),199,2025-03-25,0
+Levocetirizine,Lev_1_202409,Batch 2 (exp Mar 2025),199,2025-03-25,0
+Levocetirizine,Lev_2_202409,Batch 3 (exp Sep 2025),200,2025-09-26,0
+Fexofenadine,Fex_0_202409,Batch 1 (exp Nov 2024),231,2024-11-25,0
+Fexofenadine,Fex_1_202409,Batch 2 (exp Nov 2024),231,2024-11-10,0
+Fexofenadine,Fex_2_202409,Batch 3 (exp Oct 2024),231,2024-10-26,0
+Omeprazole,Ome_0_202409,Batch 1 (exp Mar 2025),336,2025-03-25,0
+Omeprazole,Ome_1_202409,Batch 2 (exp Mar 2025),336,2025-03-25,0
+Omeprazole,Ome_2_202409,Batch 3 (exp Oct 2024),337,2024-10-11,0
+Pantoprazole,Pan_0_202409,Batch 1 (exp Jun 2025),249,2025-06-23,0
+Pantoprazole,Pan_1_202409,Batch 2 (exp Dec 2024),249,2024-12-25,0
+Pantoprazole,Pan_2_202409,Batch 3 (exp Oct 2024),250,2024-10-11,0
+Ranitidine,Ran_0_202409,Batch 1 (exp Oct 2024),248,2024-10-26,0
+Ranitidine,Ran_1_202409,Batch 2 (exp Oct 2024),248,2024-10-26,0
+Ranitidine,Ran_2_202409,Batch 3 (exp Sep 2025),248,2025-09-26,0
+Metformin,Met_0_202409,Batch 1 (exp Dec 2024),355,2024-12-25,0
+Metformin,Met_1_202409,Batch 2 (exp Jun 2025),355,2025-06-23,0
+Metformin,Met_2_202409,Batch 3 (exp Oct 2024),355,2024-10-11,0
+Glimepiride,Gli_0_202409,Batch 1 (exp Oct 2024),202,2024-10-11,0
+Glimepiride,Gli_1_202409,Batch 2 (exp Mar 2025),202,2025-03-25,0
+Glimepiride,Gli_2_202409,Batch 3 (exp Mar 2025),202,2025-03-25,0
+Pioglitazone,Pio_0_202409,Batch 1 (exp Jun 2025),164,2025-06-23,0
+Pioglitazone,Pio_1_202409,Batch 2 (exp Sep 2025),164,2025-09-26,0
+Pioglitazone,Pio_2_202409,Batch 3 (exp Sep 2025),164,2025-09-26,0
+Amlodipine,Aml_0_202409,Batch 1 (exp Oct 2024),217,2024-10-26,0
+Amlodipine,Aml_1_202409,Batch 2 (exp Nov 2024),217,2024-11-10,0
+Amlodipine,Aml_2_202409,Batch 3 (exp Nov 2024),219,2024-11-25,0
+Losartan,Los_0_202409,Batch 1 (exp Mar 2025),285,2025-03-25,0
+Losartan,Los_1_202409,Batch 2 (exp Mar 2025),285,2025-03-25,0
+Losartan,Los_2_202409,Batch 3 (exp Mar 2025),286,2025-03-25,0
+Metoprolol,Met_0_202409,Batch 1 (exp Jun 2025),200,2025-06-23,0
+Metoprolol,Met_1_202409,Batch 2 (exp Oct 2024),200,2024-10-26,0
+Metoprolol,Met_2_202409,Batch 3 (exp Nov 2024),200,2024-11-10,0
+Vitamin D,Vit_0_202409,Batch 1 (exp Nov 2024),399,2024-11-10,0
+Vitamin D,Vit_1_202409,Batch 2 (exp Oct 2024),399,2024-10-26,0
+Vitamin D,Vit_2_202409,Batch 3 (exp Nov 2024),401,2024-11-10,0
+Calcium,Cal_0_202409,Batch 1 (exp Oct 2024),328,2024-10-26,0
+Calcium,Cal_1_202409,Batch 2 (exp Nov 2024),328,2024-11-10,0
+Calcium,Cal_2_202409,Batch 3 (exp Jun 2025),328,2025-06-23,0
+Multivitamin,Mul_0_202409,Batch 1 (exp Nov 2024),334,2024-11-10,0
+Multivitamin,Mul_1_202409,Batch 2 (exp Sep 2025),334,2025-09-26,0
+Multivitamin,Mul_2_202409,Batch 3 (exp Mar 2025),334,2025-03-25,0
+Coldact,Col_0_202409,Batch 1 (exp Mar 2025),213,2025-03-25,0
+Coldact,Col_1_202409,Batch 2 (exp Dec 2024),213,2024-12-25,0
+Coldact,Col_2_202409,Batch 3 (exp Mar 2025),214,2025-03-25,0
+Sinarest,Sin_0_202409,Batch 1 (exp Jun 2025),216,2025-06-23,0
+Sinarest,Sin_1_202409,Batch 2 (exp Sep 2025),216,2025-09-26,0
+Sinarest,Sin_2_202409,Batch 3 (exp Oct 2024),216,2024-10-26,0
+Vicks Action 500,Vic_0_202409,Batch 1 (exp Nov 2024),329,2024-11-10,0
+Vicks Action 500,Vic_1_202409,Batch 2 (exp Jun 2025),329,2025-06-23,0
+Vicks Action 500,Vic_2_202409,Batch 3 (exp Oct 2024),330,2024-10-11,0
+Chyawanprash,Chy_0_202409,Batch 1 (exp Nov 2024),81,2024-11-25,0
+Chyawanprash,Chy_1_202409,Batch 2 (exp Mar 2025),81,2025-03-25,0
+Chyawanprash,Chy_2_202409,Batch 3 (exp Oct 2024),82,2024-10-26,0
+Triphala,Tri_0_202409,Batch 1 (exp Mar 2025),62,2025-03-25,0
+Triphala,Tri_1_202409,Batch 2 (exp Nov 2024),62,2024-11-25,0
+Triphala,Tri_2_202409,Batch 3 (exp Jun 2025),62,2025-06-23,0
+Paracetamol Plus,Par_0_202409,Batch 1 (exp Nov 2024),201,2024-11-10,0
+Paracetamol Plus,Par_1_202409,Batch 2 (exp Jun 2025),201,2025-06-23,0
+Paracetamol Plus,Par_2_202409,Batch 3 (exp Nov 2024),202,2024-11-25,0
+Dolo 650 Plus,Dol_0_202409,Batch 1 (exp Oct 2024),222,2024-10-26,0
+Dolo 650 Plus,Dol_1_202409,Batch 2 (exp Oct 2024),222,2024-10-11,0
+Dolo 650 Plus,Dol_2_202409,Batch 3 (exp Mar 2025),224,2025-03-25,0
+Combiflam Plus,Com_0_202409,Batch 1 (exp Jun 2025),271,2025-06-23,0
+Combiflam Plus,Com_1_202409,Batch 2 (exp Jun 2025),271,2025-06-23,0
+Combiflam Plus,Com_2_202409,Batch 3 (exp Nov 2024),273,2024-11-25,0
+Aspirin Plus,Asp_0_202409,Batch 1 (exp Nov 2024),122,2024-11-10,0
+Aspirin Plus,Asp_1_202409,Batch 2 (exp Jun 2025),122,2025-06-23,0
+Aspirin Plus,Asp_2_202409,Batch 3 (exp Dec 2024),123,2024-12-25,0
+Amoxicillin Plus,Amo_0_202409,Batch 1 (exp Mar 2025),124,2025-03-25,0
+Amoxicillin Plus,Amo_1_202409,Batch 2 (exp Sep 2025),124,2025-09-26,0
+Amoxicillin Plus,Amo_2_202409,Batch 3 (exp Nov 2024),125,2024-11-25,0
+Azithromycin Plus,Azi_0_202409,Batch 1 (exp Dec 2024),102,2024-12-25,0
+Azithromycin Plus,Azi_1_202409,Batch 2 (exp Dec 2024),102,2024-12-25,0
+Azithromycin Plus,Azi_2_202409,Batch 3 (exp Dec 2024),102,2024-12-25,0
+Ciprofloxacin Plus,Cip_0_202409,Batch 1 (exp Oct 2024),48,2024-10-11,0
+Ciprofloxacin Plus,Cip_1_202409,Batch 2 (exp Mar 2025),48,2025-03-25,0
+Ciprofloxacin Plus,Cip_2_202409,Batch 3 (exp Jun 2025),48,2025-06-23,0
+Doxycycline Plus,Dox_0_202409,Batch 1 (exp Nov 2024),84,2024-11-10,0
+Doxycycline Plus,Dox_1_202409,Batch 2 (exp Mar 2025),84,2025-03-25,0
+Doxycycline Plus,Dox_2_202409,Batch 3 (exp Mar 2025),86,2025-03-25,0
+Cetirizine Plus,Cet_0_202409,Batch 1 (exp Nov 2024),286,2024-11-25,0
+Cetirizine Plus,Cet_1_202409,Batch 2 (exp Sep 2025),286,2025-09-26,0
+Cetirizine Plus,Cet_2_202409,Batch 3 (exp Nov 2024),287,2024-11-25,0
+Levocetirizine Plus,Lev_0_202409,Batch 1 (exp Sep 2025),180,2025-09-26,0
+Levocetirizine Plus,Lev_1_202409,Batch 2 (exp Nov 2024),180,2024-11-10,0
+Levocetirizine Plus,Lev_2_202409,Batch 3 (exp Dec 2024),180,2024-12-25,0
+Fexofenadine Plus,Fex_0_202409,Batch 1 (exp Oct 2024),133,2024-10-26,0
+Fexofenadine Plus,Fex_1_202409,Batch 2 (exp Oct 2024),133,2024-10-11,0
+Fexofenadine Plus,Fex_2_202409,Batch 3 (exp Sep 2025),133,2025-09-26,0
+Omeprazole Plus,Ome_0_202409,Batch 1 (exp Nov 2024),246,2024-11-10,0
+Omeprazole Plus,Ome_1_202409,Batch 2 (exp Oct 2024),246,2024-10-26,0
+Omeprazole Plus,Ome_2_202409,Batch 3 (exp Sep 2025),246,2025-09-26,0
+Pantoprazole Plus,Pan_0_202409,Batch 1 (exp Oct 2024),249,2024-10-26,0
+Pantoprazole Plus,Pan_1_202409,Batch 2 (exp Nov 2024),249,2024-11-10,0
+Pantoprazole Plus,Pan_2_202409,Batch 3 (exp Sep 2025),250,2025-09-26,0
+Ranitidine Plus,Ran_0_202409,Batch 1 (exp Nov 2024),75,2024-11-10,0
+Ranitidine Plus,Ran_1_202409,Batch 2 (exp Nov 2024),75,2024-11-10,0
+Ranitidine Plus,Ran_2_202409,Batch 3 (exp Jun 2025),76,2025-06-23,0
+Metformin Plus,Met_0_202409,Batch 1 (exp Dec 2024),392,2024-12-25,0
+Metformin Plus,Met_1_202409,Batch 2 (exp Nov 2024),392,2024-11-25,0
+Metformin Plus,Met_2_202409,Batch 3 (exp Mar 2025),393,2025-03-25,0
+Glimepiride Plus,Gli_0_202409,Batch 1 (exp Jun 2025),173,2025-06-23,0
+Glimepiride Plus,Gli_1_202409,Batch 2 (exp Mar 2025),173,2025-03-25,0
+Glimepiride Plus,Gli_2_202409,Batch 3 (exp Mar 2025),175,2025-03-25,0
+Pioglitazone Plus,Pio_0_202409,Batch 1 (exp Nov 2024),185,2024-11-25,0
+Pioglitazone Plus,Pio_1_202409,Batch 2 (exp Oct 2024),185,2024-10-11,0
+Pioglitazone Plus,Pio_2_202409,Batch 3 (exp Mar 2025),187,2025-03-25,0
+Amlodipine Plus,Aml_0_202409,Batch 1 (exp Nov 2024),202,2024-11-25,0
+Amlodipine Plus,Aml_1_202409,Batch 2 (exp Oct 2024),202,2024-10-11,0
+Amlodipine Plus,Aml_2_202409,Batch 3 (exp Jun 2025),203,2025-06-23,0
+Losartan Plus,Los_0_202409,Batch 1 (exp Jun 2025),280,2025-06-23,0
+Losartan Plus,Los_1_202409,Batch 2 (exp Oct 2024),280,2024-10-11,0
+Losartan Plus,Los_2_202409,Batch 3 (exp Nov 2024),280,2024-11-25,0
+Metoprolol Plus,Met_0_202409,Batch 1 (exp Nov 2024),100,2024-11-25,0
+Metoprolol Plus,Met_1_202409,Batch 2 (exp Nov 2024),100,2024-11-25,0
+Metoprolol Plus,Met_2_202409,Batch 3 (exp Mar 2025),100,2025-03-25,0
+Vitamin D Plus,Vit_0_202409,Batch 1 (exp Nov 2024),453,2024-11-25,0
+Vitamin D Plus,Vit_1_202409,Batch 2 (exp Nov 2024),453,2024-11-10,0
+Vitamin D Plus,Vit_2_202409,Batch 3 (exp Sep 2025),455,2025-09-26,0
+Calcium Plus,Cal_0_202409,Batch 1 (exp Oct 2024),319,2024-10-26,0
+Calcium Plus,Cal_1_202409,Batch 2 (exp Nov 2024),319,2024-11-25,0
+Calcium Plus,Cal_2_202409,Batch 3 (exp Nov 2024),321,2024-11-10,0
