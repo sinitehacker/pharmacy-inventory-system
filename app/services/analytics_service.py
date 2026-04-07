@@ -13,9 +13,9 @@ class AnalyticsService:
     """
     
     def __init__(self):
-    # Path to your mock JSON in forecasting/data_test
+        # Path to your mock JSON in forecasting/data_test
         self.project_root = Path(__file__).parent.parent.parent
-        self.risk_report_path = self.project_root / "forecasting" / "data_test" / "final_risk_report.json"
+        self.risk_report_path = self.project_root / "data" / "final_risk_report.json"
         self.config_path = self.project_root / "forecasting" / "risk_config.json"
         
     def load_risk_report(self) -> Dict:

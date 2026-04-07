@@ -1,0 +1,2152 @@
+[
+  {
+    "medicine_name": "Paracetamol",
+    "forecast_summary": {
+      "average_daily_demand": 28,
+      "total_30_day_forecast": 837,
+      "MAE": 3.96
+    },
+    "batches": [
+      {
+        "batch_id": "Par_0_202409",
+        "batch_name": "Batch 1 (exp Mar 2025)",
+        "current_stock": 564,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 28,
+        "estimated_days_to_sell": 20,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Par_1_202409",
+        "batch_name": "Batch 2 (exp Oct 2024)",
+        "current_stock": 564,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-26",
+        "forecasted_daily_demand": 28,
+        "estimated_days_to_sell": 20,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Par_2_202409",
+        "batch_name": "Batch 3 (exp Nov 2024)",
+        "current_stock": 565,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 28,
+        "estimated_days_to_sell": 20,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Cetirizine Plus",
+    "forecast_summary": {
+      "average_daily_demand": 17,
+      "total_30_day_forecast": 519,
+      "MAE": 2.48
+    },
+    "batches": [
+      {
+        "batch_id": "Cet_0_202409",
+        "batch_name": "Batch 1 (exp Nov 2024)",
+        "current_stock": 286,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-25",
+        "forecasted_daily_demand": 17,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Cet_1_202409",
+        "batch_name": "Batch 2 (exp Sep 2025)",
+        "current_stock": 286,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-09-26",
+        "forecasted_daily_demand": 17,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Cet_2_202409",
+        "batch_name": "Batch 3 (exp Nov 2024)",
+        "current_stock": 287,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-25",
+        "forecasted_daily_demand": 17,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Fexofenadine",
+    "forecast_summary": {
+      "average_daily_demand": 17,
+      "total_30_day_forecast": 512,
+      "MAE": 2.72
+    },
+    "batches": [
+      {
+        "batch_id": "Fex_0_202409",
+        "batch_name": "Batch 1 (exp Nov 2024)",
+        "current_stock": 231,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-25",
+        "forecasted_daily_demand": 17,
+        "estimated_days_to_sell": 14,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Fex_1_202409",
+        "batch_name": "Batch 2 (exp Nov 2024)",
+        "current_stock": 231,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 17,
+        "estimated_days_to_sell": 14,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Fex_2_202409",
+        "batch_name": "Batch 3 (exp Oct 2024)",
+        "current_stock": 231,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-26",
+        "forecasted_daily_demand": 17,
+        "estimated_days_to_sell": 14,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Levocetirizine Plus",
+    "forecast_summary": {
+      "average_daily_demand": 13,
+      "total_30_day_forecast": 377,
+      "MAE": 1.43
+    },
+    "batches": [
+      {
+        "batch_id": "Lev_0_202409",
+        "batch_name": "Batch 1 (exp Sep 2025)",
+        "current_stock": 180,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-09-26",
+        "forecasted_daily_demand": 13,
+        "estimated_days_to_sell": 14,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Lev_1_202409",
+        "batch_name": "Batch 2 (exp Nov 2024)",
+        "current_stock": 180,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 13,
+        "estimated_days_to_sell": 14,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Lev_2_202409",
+        "batch_name": "Batch 3 (exp Dec 2024)",
+        "current_stock": 180,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-12-25",
+        "forecasted_daily_demand": 13,
+        "estimated_days_to_sell": 14,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Levocetirizine",
+    "forecast_summary": {
+      "average_daily_demand": 24,
+      "total_30_day_forecast": 712,
+      "MAE": 3.71
+    },
+    "batches": [
+      {
+        "batch_id": "Lev_0_202409",
+        "batch_name": "Batch 1 (exp Mar 2025)",
+        "current_stock": 199,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 24,
+        "estimated_days_to_sell": 8,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Lev_1_202409",
+        "batch_name": "Batch 2 (exp Mar 2025)",
+        "current_stock": 199,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 24,
+        "estimated_days_to_sell": 8,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Lev_2_202409",
+        "batch_name": "Batch 3 (exp Sep 2025)",
+        "current_stock": 200,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-09-26",
+        "forecasted_daily_demand": 24,
+        "estimated_days_to_sell": 8,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Vitamin D Plus",
+    "forecast_summary": {
+      "average_daily_demand": 26,
+      "total_30_day_forecast": 780,
+      "MAE": 4.14
+    },
+    "batches": [
+      {
+        "batch_id": "Vit_0_202409",
+        "batch_name": "Batch 1 (exp Nov 2024)",
+        "current_stock": 453,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-25",
+        "forecasted_daily_demand": 26,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Vit_1_202409",
+        "batch_name": "Batch 2 (exp Nov 2024)",
+        "current_stock": 453,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 26,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Vit_2_202409",
+        "batch_name": "Batch 3 (exp Sep 2025)",
+        "current_stock": 455,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-09-26",
+        "forecasted_daily_demand": 26,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Fexofenadine Plus",
+    "forecast_summary": {
+      "average_daily_demand": 9,
+      "total_30_day_forecast": 280,
+      "MAE": 1.67
+    },
+    "batches": [
+      {
+        "batch_id": "Fex_0_202409",
+        "batch_name": "Batch 1 (exp Oct 2024)",
+        "current_stock": 133,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-26",
+        "forecasted_daily_demand": 9,
+        "estimated_days_to_sell": 14,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Fex_1_202409",
+        "batch_name": "Batch 2 (exp Oct 2024)",
+        "current_stock": 133,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-11",
+        "forecasted_daily_demand": 9,
+        "estimated_days_to_sell": 14,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Fex_2_202409",
+        "batch_name": "Batch 3 (exp Sep 2025)",
+        "current_stock": 133,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-09-26",
+        "forecasted_daily_demand": 9,
+        "estimated_days_to_sell": 14,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Cetirizine",
+    "forecast_summary": {
+      "average_daily_demand": 30,
+      "total_30_day_forecast": 898,
+      "MAE": 6.74
+    },
+    "batches": [
+      {
+        "batch_id": "Cet_0_202409",
+        "batch_name": "Batch 1 (exp Jun 2025)",
+        "current_stock": 262,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 30,
+        "estimated_days_to_sell": 9,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Cet_1_202409",
+        "batch_name": "Batch 2 (exp Mar 2025)",
+        "current_stock": 262,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 30,
+        "estimated_days_to_sell": 9,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Cet_2_202409",
+        "batch_name": "Batch 3 (exp Dec 2024)",
+        "current_stock": 264,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-12-25",
+        "forecasted_daily_demand": 30,
+        "estimated_days_to_sell": 9,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Omeprazole Plus",
+    "forecast_summary": {
+      "average_daily_demand": 15,
+      "total_30_day_forecast": 441,
+      "MAE": 2.05
+    },
+    "batches": [
+      {
+        "batch_id": "Ome_0_202409",
+        "batch_name": "Batch 1 (exp Nov 2024)",
+        "current_stock": 246,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 15,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Ome_1_202409",
+        "batch_name": "Batch 2 (exp Oct 2024)",
+        "current_stock": 246,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-26",
+        "forecasted_daily_demand": 15,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Ome_2_202409",
+        "batch_name": "Batch 3 (exp Sep 2025)",
+        "current_stock": 246,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-09-26",
+        "forecasted_daily_demand": 15,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Doxycycline",
+    "forecast_summary": {
+      "average_daily_demand": 6,
+      "total_30_day_forecast": 181,
+      "MAE": 0.95
+    },
+    "batches": [
+      {
+        "batch_id": "Dox_0_202409",
+        "batch_name": "Batch 1 (exp Sep 2025)",
+        "current_stock": 117,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-09-26",
+        "forecasted_daily_demand": 6,
+        "estimated_days_to_sell": 19,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Dox_1_202409",
+        "batch_name": "Batch 2 (exp Sep 2025)",
+        "current_stock": 117,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-09-26",
+        "forecasted_daily_demand": 6,
+        "estimated_days_to_sell": 19,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Dox_2_202409",
+        "batch_name": "Batch 3 (exp Oct 2024)",
+        "current_stock": 118,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-11",
+        "forecasted_daily_demand": 6,
+        "estimated_days_to_sell": 20,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Pantoprazole Plus",
+    "forecast_summary": {
+      "average_daily_demand": 12,
+      "total_30_day_forecast": 359,
+      "MAE": 2.31
+    },
+    "batches": [
+      {
+        "batch_id": "Pan_0_202409",
+        "batch_name": "Batch 1 (exp Oct 2024)",
+        "current_stock": 249,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-26",
+        "forecasted_daily_demand": 12,
+        "estimated_days_to_sell": 21,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Pan_1_202409",
+        "batch_name": "Batch 2 (exp Nov 2024)",
+        "current_stock": 249,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 12,
+        "estimated_days_to_sell": 21,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Pan_2_202409",
+        "batch_name": "Batch 3 (exp Sep 2025)",
+        "current_stock": 250,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-09-26",
+        "forecasted_daily_demand": 12,
+        "estimated_days_to_sell": 21,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Ciprofloxacin",
+    "forecast_summary": {
+      "average_daily_demand": 7,
+      "total_30_day_forecast": 212,
+      "MAE": 1.07
+    },
+    "batches": [
+      {
+        "batch_id": "Cip_0_202409",
+        "batch_name": "Batch 1 (exp Dec 2024)",
+        "current_stock": 132,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-12-25",
+        "forecasted_daily_demand": 7,
+        "estimated_days_to_sell": 19,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Cip_1_202409",
+        "batch_name": "Batch 2 (exp Nov 2024)",
+        "current_stock": 132,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 7,
+        "estimated_days_to_sell": 19,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Cip_2_202409",
+        "batch_name": "Batch 3 (exp Mar 2025)",
+        "current_stock": 132,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 7,
+        "estimated_days_to_sell": 19,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Ranitidine Plus",
+    "forecast_summary": {
+      "average_daily_demand": 10,
+      "total_30_day_forecast": 308,
+      "MAE": 1.54
+    },
+    "batches": [
+      {
+        "batch_id": "Ran_0_202409",
+        "batch_name": "Batch 1 (exp Nov 2024)",
+        "current_stock": 75,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 10,
+        "estimated_days_to_sell": 7,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Ran_1_202409",
+        "batch_name": "Batch 2 (exp Nov 2024)",
+        "current_stock": 75,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 10,
+        "estimated_days_to_sell": 7,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Ran_2_202409",
+        "batch_name": "Batch 3 (exp Jun 2025)",
+        "current_stock": 76,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 10,
+        "estimated_days_to_sell": 7,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Azithromycin",
+    "forecast_summary": {
+      "average_daily_demand": 8,
+      "total_30_day_forecast": 250,
+      "MAE": 1.51
+    },
+    "batches": [
+      {
+        "batch_id": "Azi_0_202409",
+        "batch_name": "Batch 1 (exp Dec 2024)",
+        "current_stock": 152,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-12-25",
+        "forecasted_daily_demand": 8,
+        "estimated_days_to_sell": 18,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Azi_1_202409",
+        "batch_name": "Batch 2 (exp Sep 2025)",
+        "current_stock": 152,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-09-26",
+        "forecasted_daily_demand": 8,
+        "estimated_days_to_sell": 18,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Azi_2_202409",
+        "batch_name": "Batch 3 (exp Dec 2024)",
+        "current_stock": 154,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-12-25",
+        "forecasted_daily_demand": 8,
+        "estimated_days_to_sell": 19,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Metformin Plus",
+    "forecast_summary": {
+      "average_daily_demand": 29,
+      "total_30_day_forecast": 861,
+      "MAE": 4.53
+    },
+    "batches": [
+      {
+        "batch_id": "Met_0_202409",
+        "batch_name": "Batch 1 (exp Dec 2024)",
+        "current_stock": 392,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-12-25",
+        "forecasted_daily_demand": 29,
+        "estimated_days_to_sell": 14,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Met_1_202409",
+        "batch_name": "Batch 2 (exp Nov 2024)",
+        "current_stock": 392,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-25",
+        "forecasted_daily_demand": 29,
+        "estimated_days_to_sell": 14,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Met_2_202409",
+        "batch_name": "Batch 3 (exp Mar 2025)",
+        "current_stock": 393,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 29,
+        "estimated_days_to_sell": 14,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Glimepiride Plus",
+    "forecast_summary": {
+      "average_daily_demand": 17,
+      "total_30_day_forecast": 502,
+      "MAE": 2.55
+    },
+    "batches": [
+      {
+        "batch_id": "Gli_0_202409",
+        "batch_name": "Batch 1 (exp Jun 2025)",
+        "current_stock": 173,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 17,
+        "estimated_days_to_sell": 10,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Gli_1_202409",
+        "batch_name": "Batch 2 (exp Mar 2025)",
+        "current_stock": 173,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 17,
+        "estimated_days_to_sell": 10,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Gli_2_202409",
+        "batch_name": "Batch 3 (exp Mar 2025)",
+        "current_stock": 175,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 17,
+        "estimated_days_to_sell": 10,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Amoxicillin",
+    "forecast_summary": {
+      "average_daily_demand": 12,
+      "total_30_day_forecast": 364,
+      "MAE": 1.81
+    },
+    "batches": [
+      {
+        "batch_id": "Amo_0_202409",
+        "batch_name": "Batch 1 (exp Jun 2025)",
+        "current_stock": 115,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 12,
+        "estimated_days_to_sell": 9,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Amo_1_202409",
+        "batch_name": "Batch 2 (exp Nov 2024)",
+        "current_stock": 115,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 12,
+        "estimated_days_to_sell": 9,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Amo_2_202409",
+        "batch_name": "Batch 3 (exp Sep 2025)",
+        "current_stock": 117,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-09-26",
+        "forecasted_daily_demand": 12,
+        "estimated_days_to_sell": 10,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Pioglitazone Plus",
+    "forecast_summary": {
+      "average_daily_demand": 11,
+      "total_30_day_forecast": 315,
+      "MAE": 1.34
+    },
+    "batches": [
+      {
+        "batch_id": "Pio_0_202409",
+        "batch_name": "Batch 1 (exp Nov 2024)",
+        "current_stock": 185,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-25",
+        "forecasted_daily_demand": 11,
+        "estimated_days_to_sell": 18,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Pio_1_202409",
+        "batch_name": "Batch 2 (exp Oct 2024)",
+        "current_stock": 185,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-11",
+        "forecasted_daily_demand": 11,
+        "estimated_days_to_sell": 18,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Pio_2_202409",
+        "batch_name": "Batch 3 (exp Mar 2025)",
+        "current_stock": 187,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 11,
+        "estimated_days_to_sell": 18,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Aspirin",
+    "forecast_summary": {
+      "average_daily_demand": 11,
+      "total_30_day_forecast": 318,
+      "MAE": 1.49
+    },
+    "batches": [
+      {
+        "batch_id": "Asp_0_202409",
+        "batch_name": "Batch 1 (exp Mar 2025)",
+        "current_stock": 75,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 11,
+        "estimated_days_to_sell": 7,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Asp_1_202409",
+        "batch_name": "Batch 2 (exp Dec 2024)",
+        "current_stock": 75,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-12-25",
+        "forecasted_daily_demand": 11,
+        "estimated_days_to_sell": 7,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Asp_2_202409",
+        "batch_name": "Batch 3 (exp Dec 2024)",
+        "current_stock": 76,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-12-25",
+        "forecasted_daily_demand": 11,
+        "estimated_days_to_sell": 7,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Amlodipine Plus",
+    "forecast_summary": {
+      "average_daily_demand": 20,
+      "total_30_day_forecast": 605,
+      "MAE": 3.31
+    },
+    "batches": [
+      {
+        "batch_id": "Aml_0_202409",
+        "batch_name": "Batch 1 (exp Nov 2024)",
+        "current_stock": 202,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-25",
+        "forecasted_daily_demand": 20,
+        "estimated_days_to_sell": 10,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Aml_1_202409",
+        "batch_name": "Batch 2 (exp Oct 2024)",
+        "current_stock": 202,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-11",
+        "forecasted_daily_demand": 20,
+        "estimated_days_to_sell": 10,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Aml_2_202409",
+        "batch_name": "Batch 3 (exp Jun 2025)",
+        "current_stock": 203,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 20,
+        "estimated_days_to_sell": 10,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Combiflam",
+    "forecast_summary": {
+      "average_daily_demand": 17,
+      "total_30_day_forecast": 502,
+      "MAE": 2.61
+    },
+    "batches": [
+      {
+        "batch_id": "Com_0_202409",
+        "batch_name": "Batch 1 (exp Oct 2024)",
+        "current_stock": 246,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-26",
+        "forecasted_daily_demand": 17,
+        "estimated_days_to_sell": 15,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Com_1_202409",
+        "batch_name": "Batch 2 (exp Nov 2024)",
+        "current_stock": 246,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 17,
+        "estimated_days_to_sell": 15,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Com_2_202409",
+        "batch_name": "Batch 3 (exp Oct 2024)",
+        "current_stock": 247,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-11",
+        "forecasted_daily_demand": 17,
+        "estimated_days_to_sell": 15,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Losartan Plus",
+    "forecast_summary": {
+      "average_daily_demand": 16,
+      "total_30_day_forecast": 494,
+      "MAE": 2.92
+    },
+    "batches": [
+      {
+        "batch_id": "Los_0_202409",
+        "batch_name": "Batch 1 (exp Jun 2025)",
+        "current_stock": 280,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 16,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Los_1_202409",
+        "batch_name": "Batch 2 (exp Oct 2024)",
+        "current_stock": 280,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-11",
+        "forecasted_daily_demand": 16,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Los_2_202409",
+        "batch_name": "Batch 3 (exp Nov 2024)",
+        "current_stock": 280,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-25",
+        "forecasted_daily_demand": 16,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Omeprazole",
+    "forecast_summary": {
+      "average_daily_demand": 17,
+      "total_30_day_forecast": 511,
+      "MAE": 1.63
+    },
+    "batches": [
+      {
+        "batch_id": "Ome_0_202409",
+        "batch_name": "Batch 1 (exp Mar 2025)",
+        "current_stock": 336,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 17,
+        "estimated_days_to_sell": 20,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Ome_1_202409",
+        "batch_name": "Batch 2 (exp Mar 2025)",
+        "current_stock": 336,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 17,
+        "estimated_days_to_sell": 20,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Ome_2_202409",
+        "batch_name": "Batch 3 (exp Oct 2024)",
+        "current_stock": 337,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-11",
+        "forecasted_daily_demand": 17,
+        "estimated_days_to_sell": 20,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Dolo 650",
+    "forecast_summary": {
+      "average_daily_demand": 22,
+      "total_30_day_forecast": 649,
+      "MAE": 3.46
+    },
+    "batches": [
+      {
+        "batch_id": "Dol_0_202409",
+        "batch_name": "Batch 1 (exp Nov 2024)",
+        "current_stock": 297,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 22,
+        "estimated_days_to_sell": 14,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Dol_1_202409",
+        "batch_name": "Batch 2 (exp Oct 2024)",
+        "current_stock": 297,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-26",
+        "forecasted_daily_demand": 22,
+        "estimated_days_to_sell": 14,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Dol_2_202409",
+        "batch_name": "Batch 3 (exp Oct 2024)",
+        "current_stock": 297,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-11",
+        "forecasted_daily_demand": 22,
+        "estimated_days_to_sell": 14,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Doxycycline Plus",
+    "forecast_summary": {
+      "average_daily_demand": 5,
+      "total_30_day_forecast": 148,
+      "MAE": 0.88
+    },
+    "batches": [
+      {
+        "batch_id": "Dox_0_202409",
+        "batch_name": "Batch 1 (exp Nov 2024)",
+        "current_stock": 84,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 5,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Dox_1_202409",
+        "batch_name": "Batch 2 (exp Mar 2025)",
+        "current_stock": 84,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 5,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Dox_2_202409",
+        "batch_name": "Batch 3 (exp Mar 2025)",
+        "current_stock": 86,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 5,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Ciprofloxacin Plus",
+    "forecast_summary": {
+      "average_daily_demand": 6,
+      "total_30_day_forecast": 185,
+      "MAE": 1.03
+    },
+    "batches": [
+      {
+        "batch_id": "Cip_0_202409",
+        "batch_name": "Batch 1 (exp Oct 2024)",
+        "current_stock": 48,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-11",
+        "forecasted_daily_demand": 6,
+        "estimated_days_to_sell": 8,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Cip_1_202409",
+        "batch_name": "Batch 2 (exp Mar 2025)",
+        "current_stock": 48,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 6,
+        "estimated_days_to_sell": 8,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Cip_2_202409",
+        "batch_name": "Batch 3 (exp Jun 2025)",
+        "current_stock": 48,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 6,
+        "estimated_days_to_sell": 8,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Multivitamin",
+    "forecast_summary": {
+      "average_daily_demand": 26,
+      "total_30_day_forecast": 765,
+      "MAE": 4.79
+    },
+    "batches": [
+      {
+        "batch_id": "Mul_0_202409",
+        "batch_name": "Batch 1 (exp Nov 2024)",
+        "current_stock": 334,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 26,
+        "estimated_days_to_sell": 13,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Mul_1_202409",
+        "batch_name": "Batch 2 (exp Sep 2025)",
+        "current_stock": 334,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-09-26",
+        "forecasted_daily_demand": 26,
+        "estimated_days_to_sell": 13,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Mul_2_202409",
+        "batch_name": "Batch 3 (exp Mar 2025)",
+        "current_stock": 334,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 26,
+        "estimated_days_to_sell": 13,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Sinarest",
+    "forecast_summary": {
+      "average_daily_demand": 9,
+      "total_30_day_forecast": 278,
+      "MAE": 1.57
+    },
+    "batches": [
+      {
+        "batch_id": "Sin_0_202409",
+        "batch_name": "Batch 1 (exp Jun 2025)",
+        "current_stock": 216,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 9,
+        "estimated_days_to_sell": 23,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Sin_1_202409",
+        "batch_name": "Batch 2 (exp Sep 2025)",
+        "current_stock": 216,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-09-26",
+        "forecasted_daily_demand": 9,
+        "estimated_days_to_sell": 23,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Sin_2_202409",
+        "batch_name": "Batch 3 (exp Oct 2024)",
+        "current_stock": 216,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-26",
+        "forecasted_daily_demand": 9,
+        "estimated_days_to_sell": 23,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Calcium",
+    "forecast_summary": {
+      "average_daily_demand": 22,
+      "total_30_day_forecast": 648,
+      "MAE": 3.25
+    },
+    "batches": [
+      {
+        "batch_id": "Cal_0_202409",
+        "batch_name": "Batch 1 (exp Oct 2024)",
+        "current_stock": 328,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-26",
+        "forecasted_daily_demand": 22,
+        "estimated_days_to_sell": 15,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Cal_1_202409",
+        "batch_name": "Batch 2 (exp Nov 2024)",
+        "current_stock": 328,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 22,
+        "estimated_days_to_sell": 15,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Cal_2_202409",
+        "batch_name": "Batch 3 (exp Jun 2025)",
+        "current_stock": 328,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 22,
+        "estimated_days_to_sell": 15,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Vicks Action 500",
+    "forecast_summary": {
+      "average_daily_demand": 14,
+      "total_30_day_forecast": 406,
+      "MAE": 2.28
+    },
+    "batches": [
+      {
+        "batch_id": "Vic_0_202409",
+        "batch_name": "Batch 1 (exp Nov 2024)",
+        "current_stock": 329,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 14,
+        "estimated_days_to_sell": 24,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Vic_1_202409",
+        "batch_name": "Batch 2 (exp Jun 2025)",
+        "current_stock": 329,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 14,
+        "estimated_days_to_sell": 24,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Vic_2_202409",
+        "batch_name": "Batch 3 (exp Oct 2024)",
+        "current_stock": 330,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-11",
+        "forecasted_daily_demand": 14,
+        "estimated_days_to_sell": 24,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Vitamin D",
+    "forecast_summary": {
+      "average_daily_demand": 27,
+      "total_30_day_forecast": 806,
+      "MAE": 3.64
+    },
+    "batches": [
+      {
+        "batch_id": "Vit_0_202409",
+        "batch_name": "Batch 1 (exp Nov 2024)",
+        "current_stock": 399,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 27,
+        "estimated_days_to_sell": 15,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Vit_1_202409",
+        "batch_name": "Batch 2 (exp Oct 2024)",
+        "current_stock": 399,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-26",
+        "forecasted_daily_demand": 27,
+        "estimated_days_to_sell": 15,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Vit_2_202409",
+        "batch_name": "Batch 3 (exp Nov 2024)",
+        "current_stock": 401,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 27,
+        "estimated_days_to_sell": 15,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Chyawanprash",
+    "forecast_summary": {
+      "average_daily_demand": 9,
+      "total_30_day_forecast": 258,
+      "MAE": 1.44
+    },
+    "batches": [
+      {
+        "batch_id": "Chy_0_202409",
+        "batch_name": "Batch 1 (exp Nov 2024)",
+        "current_stock": 81,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-25",
+        "forecasted_daily_demand": 9,
+        "estimated_days_to_sell": 9,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Chy_1_202409",
+        "batch_name": "Batch 2 (exp Mar 2025)",
+        "current_stock": 81,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 9,
+        "estimated_days_to_sell": 9,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Chy_2_202409",
+        "batch_name": "Batch 3 (exp Oct 2024)",
+        "current_stock": 82,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-26",
+        "forecasted_daily_demand": 9,
+        "estimated_days_to_sell": 10,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Metoprolol",
+    "forecast_summary": {
+      "average_daily_demand": 16,
+      "total_30_day_forecast": 467,
+      "MAE": 1.96
+    },
+    "batches": [
+      {
+        "batch_id": "Met_0_202409",
+        "batch_name": "Batch 1 (exp Jun 2025)",
+        "current_stock": 200,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 16,
+        "estimated_days_to_sell": 13,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Met_1_202409",
+        "batch_name": "Batch 2 (exp Oct 2024)",
+        "current_stock": 200,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-26",
+        "forecasted_daily_demand": 16,
+        "estimated_days_to_sell": 13,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Met_2_202409",
+        "batch_name": "Batch 3 (exp Nov 2024)",
+        "current_stock": 200,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 16,
+        "estimated_days_to_sell": 13,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Calcium Plus",
+    "forecast_summary": {
+      "average_daily_demand": 19,
+      "total_30_day_forecast": 580,
+      "MAE": 3.18
+    },
+    "batches": [
+      {
+        "batch_id": "Cal_0_202409",
+        "batch_name": "Batch 1 (exp Oct 2024)",
+        "current_stock": 319,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-26",
+        "forecasted_daily_demand": 19,
+        "estimated_days_to_sell": 16,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Cal_1_202409",
+        "batch_name": "Batch 2 (exp Nov 2024)",
+        "current_stock": 319,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-25",
+        "forecasted_daily_demand": 19,
+        "estimated_days_to_sell": 16,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Cal_2_202409",
+        "batch_name": "Batch 3 (exp Nov 2024)",
+        "current_stock": 321,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 19,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Triphala",
+    "forecast_summary": {
+      "average_daily_demand": 6,
+      "total_30_day_forecast": 177,
+      "MAE": 1.1
+    },
+    "batches": [
+      {
+        "batch_id": "Tri_0_202409",
+        "batch_name": "Batch 1 (exp Mar 2025)",
+        "current_stock": 62,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 6,
+        "estimated_days_to_sell": 11,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Tri_1_202409",
+        "batch_name": "Batch 2 (exp Nov 2024)",
+        "current_stock": 62,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-25",
+        "forecasted_daily_demand": 6,
+        "estimated_days_to_sell": 11,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Tri_2_202409",
+        "batch_name": "Batch 3 (exp Jun 2025)",
+        "current_stock": 62,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 6,
+        "estimated_days_to_sell": 11,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Paracetamol Plus",
+    "forecast_summary": {
+      "average_daily_demand": 24,
+      "total_30_day_forecast": 721,
+      "MAE": 4.07
+    },
+    "batches": [
+      {
+        "batch_id": "Par_0_202409",
+        "batch_name": "Batch 1 (exp Nov 2024)",
+        "current_stock": 201,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 24,
+        "estimated_days_to_sell": 8,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Par_1_202409",
+        "batch_name": "Batch 2 (exp Jun 2025)",
+        "current_stock": 201,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 24,
+        "estimated_days_to_sell": 8,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Par_2_202409",
+        "batch_name": "Batch 3 (exp Nov 2024)",
+        "current_stock": 202,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-25",
+        "forecasted_daily_demand": 24,
+        "estimated_days_to_sell": 8,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Losartan",
+    "forecast_summary": {
+      "average_daily_demand": 19,
+      "total_30_day_forecast": 574,
+      "MAE": 3.36
+    },
+    "batches": [
+      {
+        "batch_id": "Los_0_202409",
+        "batch_name": "Batch 1 (exp Mar 2025)",
+        "current_stock": 285,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 19,
+        "estimated_days_to_sell": 15,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Los_1_202409",
+        "batch_name": "Batch 2 (exp Mar 2025)",
+        "current_stock": 285,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 19,
+        "estimated_days_to_sell": 15,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Los_2_202409",
+        "batch_name": "Batch 3 (exp Mar 2025)",
+        "current_stock": 286,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 19,
+        "estimated_days_to_sell": 15,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Dolo 650 Plus",
+    "forecast_summary": {
+      "average_daily_demand": 19,
+      "total_30_day_forecast": 573,
+      "MAE": 3.13
+    },
+    "batches": [
+      {
+        "batch_id": "Dol_0_202409",
+        "batch_name": "Batch 1 (exp Oct 2024)",
+        "current_stock": 222,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-26",
+        "forecasted_daily_demand": 19,
+        "estimated_days_to_sell": 12,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Dol_1_202409",
+        "batch_name": "Batch 2 (exp Oct 2024)",
+        "current_stock": 222,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-11",
+        "forecasted_daily_demand": 19,
+        "estimated_days_to_sell": 12,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Dol_2_202409",
+        "batch_name": "Batch 3 (exp Mar 2025)",
+        "current_stock": 224,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 19,
+        "estimated_days_to_sell": 12,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Amlodipine",
+    "forecast_summary": {
+      "average_daily_demand": 23,
+      "total_30_day_forecast": 691,
+      "MAE": 3.32
+    },
+    "batches": [
+      {
+        "batch_id": "Aml_0_202409",
+        "batch_name": "Batch 1 (exp Oct 2024)",
+        "current_stock": 217,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-26",
+        "forecasted_daily_demand": 23,
+        "estimated_days_to_sell": 9,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Aml_1_202409",
+        "batch_name": "Batch 2 (exp Nov 2024)",
+        "current_stock": 217,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 23,
+        "estimated_days_to_sell": 9,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Aml_2_202409",
+        "batch_name": "Batch 3 (exp Nov 2024)",
+        "current_stock": 219,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-25",
+        "forecasted_daily_demand": 23,
+        "estimated_days_to_sell": 10,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Combiflam Plus",
+    "forecast_summary": {
+      "average_daily_demand": 14,
+      "total_30_day_forecast": 408,
+      "MAE": 2.2
+    },
+    "batches": [
+      {
+        "batch_id": "Com_0_202409",
+        "batch_name": "Batch 1 (exp Jun 2025)",
+        "current_stock": 271,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 14,
+        "estimated_days_to_sell": 20,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Com_1_202409",
+        "batch_name": "Batch 2 (exp Jun 2025)",
+        "current_stock": 271,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 14,
+        "estimated_days_to_sell": 20,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Com_2_202409",
+        "batch_name": "Batch 3 (exp Nov 2024)",
+        "current_stock": 273,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-25",
+        "forecasted_daily_demand": 14,
+        "estimated_days_to_sell": 20,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Pioglitazone",
+    "forecast_summary": {
+      "average_daily_demand": 13,
+      "total_30_day_forecast": 389,
+      "MAE": 2.44
+    },
+    "batches": [
+      {
+        "batch_id": "Pio_0_202409",
+        "batch_name": "Batch 1 (exp Jun 2025)",
+        "current_stock": 164,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 13,
+        "estimated_days_to_sell": 13,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Pio_1_202409",
+        "batch_name": "Batch 2 (exp Sep 2025)",
+        "current_stock": 164,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-09-26",
+        "forecasted_daily_demand": 13,
+        "estimated_days_to_sell": 13,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Pio_2_202409",
+        "batch_name": "Batch 3 (exp Sep 2025)",
+        "current_stock": 164,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-09-26",
+        "forecasted_daily_demand": 13,
+        "estimated_days_to_sell": 13,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Aspirin Plus",
+    "forecast_summary": {
+      "average_daily_demand": 9,
+      "total_30_day_forecast": 279,
+      "MAE": 1.52
+    },
+    "batches": [
+      {
+        "batch_id": "Asp_0_202409",
+        "batch_name": "Batch 1 (exp Nov 2024)",
+        "current_stock": 122,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-10",
+        "forecasted_daily_demand": 9,
+        "estimated_days_to_sell": 13,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Asp_1_202409",
+        "batch_name": "Batch 2 (exp Jun 2025)",
+        "current_stock": 122,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 9,
+        "estimated_days_to_sell": 13,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Asp_2_202409",
+        "batch_name": "Batch 3 (exp Dec 2024)",
+        "current_stock": 123,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-12-25",
+        "forecasted_daily_demand": 9,
+        "estimated_days_to_sell": 13,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Glimepiride",
+    "forecast_summary": {
+      "average_daily_demand": 18,
+      "total_30_day_forecast": 554,
+      "MAE": 2.9
+    },
+    "batches": [
+      {
+        "batch_id": "Gli_0_202409",
+        "batch_name": "Batch 1 (exp Oct 2024)",
+        "current_stock": 202,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-11",
+        "forecasted_daily_demand": 18,
+        "estimated_days_to_sell": 11,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Gli_1_202409",
+        "batch_name": "Batch 2 (exp Mar 2025)",
+        "current_stock": 202,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 18,
+        "estimated_days_to_sell": 11,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Gli_2_202409",
+        "batch_name": "Batch 3 (exp Mar 2025)",
+        "current_stock": 202,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 18,
+        "estimated_days_to_sell": 11,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Amoxicillin Plus",
+    "forecast_summary": {
+      "average_daily_demand": 11,
+      "total_30_day_forecast": 316,
+      "MAE": 1.12
+    },
+    "batches": [
+      {
+        "batch_id": "Amo_0_202409",
+        "batch_name": "Batch 1 (exp Mar 2025)",
+        "current_stock": 124,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 11,
+        "estimated_days_to_sell": 12,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Amo_1_202409",
+        "batch_name": "Batch 2 (exp Sep 2025)",
+        "current_stock": 124,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-09-26",
+        "forecasted_daily_demand": 11,
+        "estimated_days_to_sell": 12,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Amo_2_202409",
+        "batch_name": "Batch 3 (exp Nov 2024)",
+        "current_stock": 125,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-25",
+        "forecasted_daily_demand": 11,
+        "estimated_days_to_sell": 12,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Metformin",
+    "forecast_summary": {
+      "average_daily_demand": 32,
+      "total_30_day_forecast": 967,
+      "MAE": 5.91
+    },
+    "batches": [
+      {
+        "batch_id": "Met_0_202409",
+        "batch_name": "Batch 1 (exp Dec 2024)",
+        "current_stock": 355,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-12-25",
+        "forecasted_daily_demand": 32,
+        "estimated_days_to_sell": 11,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Met_1_202409",
+        "batch_name": "Batch 2 (exp Jun 2025)",
+        "current_stock": 355,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 32,
+        "estimated_days_to_sell": 11,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Met_2_202409",
+        "batch_name": "Batch 3 (exp Oct 2024)",
+        "current_stock": 355,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-11",
+        "forecasted_daily_demand": 32,
+        "estimated_days_to_sell": 11,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Azithromycin Plus",
+    "forecast_summary": {
+      "average_daily_demand": 7,
+      "total_30_day_forecast": 213,
+      "MAE": 0.9
+    },
+    "batches": [
+      {
+        "batch_id": "Azi_0_202409",
+        "batch_name": "Batch 1 (exp Dec 2024)",
+        "current_stock": 102,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-12-25",
+        "forecasted_daily_demand": 7,
+        "estimated_days_to_sell": 14,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Azi_1_202409",
+        "batch_name": "Batch 2 (exp Dec 2024)",
+        "current_stock": 102,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-12-25",
+        "forecasted_daily_demand": 7,
+        "estimated_days_to_sell": 14,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Azi_2_202409",
+        "batch_name": "Batch 3 (exp Dec 2024)",
+        "current_stock": 102,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-12-25",
+        "forecasted_daily_demand": 7,
+        "estimated_days_to_sell": 14,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Ranitidine",
+    "forecast_summary": {
+      "average_daily_demand": 13,
+      "total_30_day_forecast": 383,
+      "MAE": 1.87
+    },
+    "batches": [
+      {
+        "batch_id": "Ran_0_202409",
+        "batch_name": "Batch 1 (exp Oct 2024)",
+        "current_stock": 248,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-26",
+        "forecasted_daily_demand": 13,
+        "estimated_days_to_sell": 19,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Ran_1_202409",
+        "batch_name": "Batch 2 (exp Oct 2024)",
+        "current_stock": 248,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-26",
+        "forecasted_daily_demand": 13,
+        "estimated_days_to_sell": 19,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Ran_2_202409",
+        "batch_name": "Batch 3 (exp Sep 2025)",
+        "current_stock": 248,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-09-26",
+        "forecasted_daily_demand": 13,
+        "estimated_days_to_sell": 19,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Pantoprazole",
+    "forecast_summary": {
+      "average_daily_demand": 15,
+      "total_30_day_forecast": 449,
+      "MAE": 2.58
+    },
+    "batches": [
+      {
+        "batch_id": "Pan_0_202409",
+        "batch_name": "Batch 1 (exp Jun 2025)",
+        "current_stock": 249,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-06-23",
+        "forecasted_daily_demand": 15,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Pan_1_202409",
+        "batch_name": "Batch 2 (exp Dec 2024)",
+        "current_stock": 249,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-12-25",
+        "forecasted_daily_demand": 15,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Pan_2_202409",
+        "batch_name": "Batch 3 (exp Oct 2024)",
+        "current_stock": 250,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-10-11",
+        "forecasted_daily_demand": 15,
+        "estimated_days_to_sell": 17,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Metoprolol Plus",
+    "forecast_summary": {
+      "average_daily_demand": 14,
+      "total_30_day_forecast": 411,
+      "MAE": 2.32
+    },
+    "batches": [
+      {
+        "batch_id": "Met_0_202409",
+        "batch_name": "Batch 1 (exp Nov 2024)",
+        "current_stock": 100,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-25",
+        "forecasted_daily_demand": 14,
+        "estimated_days_to_sell": 7,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Met_1_202409",
+        "batch_name": "Batch 2 (exp Nov 2024)",
+        "current_stock": 100,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-11-25",
+        "forecasted_daily_demand": 14,
+        "estimated_days_to_sell": 7,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Met_2_202409",
+        "batch_name": "Batch 3 (exp Mar 2025)",
+        "current_stock": 100,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 14,
+        "estimated_days_to_sell": 7,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  },
+  {
+    "medicine_name": "Coldact",
+    "forecast_summary": {
+      "average_daily_demand": 11,
+      "total_30_day_forecast": 330,
+      "MAE": 2.15
+    },
+    "batches": [
+      {
+        "batch_id": "Col_0_202409",
+        "batch_name": "Batch 1 (exp Mar 2025)",
+        "current_stock": 213,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 11,
+        "estimated_days_to_sell": 19,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Col_1_202409",
+        "batch_name": "Batch 2 (exp Dec 2024)",
+        "current_stock": 213,
+        "days_until_expiry": 0,
+        "expiry_date": "2024-12-25",
+        "forecasted_daily_demand": 11,
+        "estimated_days_to_sell": 19,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      },
+      {
+        "batch_id": "Col_2_202409",
+        "batch_name": "Batch 3 (exp Mar 2025)",
+        "current_stock": 214,
+        "days_until_expiry": 0,
+        "expiry_date": "2025-03-25",
+        "forecasted_daily_demand": 11,
+        "estimated_days_to_sell": 19,
+        "risk_level": "Medium",
+        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+      }
+    ]
+  }
+]
