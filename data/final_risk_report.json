@@ -3,7 +3,7 @@
     "medicine_name": "Paracetamol",
     "forecast_summary": {
       "average_daily_demand": 28,
-      "total_30_day_forecast": 837,
+      "total_30_day_forecast": 834,
       "MAE": 3.96
     },
     "batches": [
@@ -11,34 +11,34 @@
         "batch_id": "Par_0_202409",
         "batch_name": "Batch 1 (exp Mar 2025)",
         "current_stock": 564,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 79,
+        "expiry_date": "2026-07-08",
         "forecasted_daily_demand": 28,
         "estimated_days_to_sell": 20,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 79 days. Monitor usage."
       },
       {
         "batch_id": "Par_1_202409",
         "batch_name": "Batch 2 (exp Oct 2024)",
         "current_stock": 564,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-26",
+        "days_until_expiry": 51,
+        "expiry_date": "2026-06-10",
         "forecasted_daily_demand": 28,
         "estimated_days_to_sell": 20,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 51 days. Monitor usage."
       },
       {
         "batch_id": "Par_2_202409",
         "batch_name": "Batch 3 (exp Nov 2024)",
         "current_stock": 565,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 112,
+        "expiry_date": "2026-08-10",
         "forecasted_daily_demand": 28,
         "estimated_days_to_sell": 20,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -47,41 +47,41 @@
     "forecast_summary": {
       "average_daily_demand": 17,
       "total_30_day_forecast": 519,
-      "MAE": 2.48
+      "MAE": 2.47
     },
     "batches": [
       {
         "batch_id": "Cet_0_202409",
         "batch_name": "Batch 1 (exp Nov 2024)",
         "current_stock": 286,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-25",
+        "days_until_expiry": 35,
+        "expiry_date": "2026-05-25",
         "forecasted_daily_demand": 17,
         "estimated_days_to_sell": 17,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 35 days. Monitor usage."
       },
       {
         "batch_id": "Cet_1_202409",
         "batch_name": "Batch 2 (exp Sep 2025)",
         "current_stock": 286,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-09-26",
+        "days_until_expiry": 91,
+        "expiry_date": "2026-07-20",
         "forecasted_daily_demand": 17,
         "estimated_days_to_sell": 17,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Cet_2_202409",
         "batch_name": "Batch 3 (exp Nov 2024)",
         "current_stock": 287,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-25",
+        "days_until_expiry": 76,
+        "expiry_date": "2026-07-05",
         "forecasted_daily_demand": 17,
         "estimated_days_to_sell": 17,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 76 days. Monitor usage."
       }
     ]
   },
@@ -89,7 +89,7 @@
     "medicine_name": "Fexofenadine",
     "forecast_summary": {
       "average_daily_demand": 17,
-      "total_30_day_forecast": 512,
+      "total_30_day_forecast": 513,
       "MAE": 2.72
     },
     "batches": [
@@ -97,34 +97,34 @@
         "batch_id": "Fex_0_202409",
         "batch_name": "Batch 1 (exp Nov 2024)",
         "current_stock": 231,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-25",
+        "days_until_expiry": 112,
+        "expiry_date": "2026-08-10",
         "forecasted_daily_demand": 17,
         "estimated_days_to_sell": 14,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Fex_1_202409",
         "batch_name": "Batch 2 (exp Nov 2024)",
         "current_stock": 231,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 146,
+        "expiry_date": "2026-09-13",
         "forecasted_daily_demand": 17,
         "estimated_days_to_sell": 14,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Fex_2_202409",
         "batch_name": "Batch 3 (exp Oct 2024)",
         "current_stock": 231,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-26",
+        "days_until_expiry": 93,
+        "expiry_date": "2026-07-22",
         "forecasted_daily_demand": 17,
         "estimated_days_to_sell": 14,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -140,34 +140,34 @@
         "batch_id": "Lev_0_202409",
         "batch_name": "Batch 1 (exp Sep 2025)",
         "current_stock": 180,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-09-26",
+        "days_until_expiry": 130,
+        "expiry_date": "2026-08-28",
         "forecasted_daily_demand": 13,
         "estimated_days_to_sell": 14,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Lev_1_202409",
         "batch_name": "Batch 2 (exp Nov 2024)",
         "current_stock": 180,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 84,
+        "expiry_date": "2026-07-13",
         "forecasted_daily_demand": 13,
         "estimated_days_to_sell": 14,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 84 days. Monitor usage."
       },
       {
         "batch_id": "Lev_2_202409",
         "batch_name": "Batch 3 (exp Dec 2024)",
         "current_stock": 180,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-12-25",
+        "days_until_expiry": 74,
+        "expiry_date": "2026-07-03",
         "forecasted_daily_demand": 13,
         "estimated_days_to_sell": 14,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 74 days. Monitor usage."
       }
     ]
   },
@@ -175,7 +175,7 @@
     "medicine_name": "Levocetirizine",
     "forecast_summary": {
       "average_daily_demand": 24,
-      "total_30_day_forecast": 712,
+      "total_30_day_forecast": 711,
       "MAE": 3.71
     },
     "batches": [
@@ -183,34 +183,34 @@
         "batch_id": "Lev_0_202409",
         "batch_name": "Batch 1 (exp Mar 2025)",
         "current_stock": 199,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 130,
+        "expiry_date": "2026-08-28",
         "forecasted_daily_demand": 24,
         "estimated_days_to_sell": 8,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Lev_1_202409",
         "batch_name": "Batch 2 (exp Mar 2025)",
         "current_stock": 199,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 84,
+        "expiry_date": "2026-07-13",
         "forecasted_daily_demand": 24,
         "estimated_days_to_sell": 8,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 84 days. Monitor usage."
       },
       {
         "batch_id": "Lev_2_202409",
         "batch_name": "Batch 3 (exp Sep 2025)",
         "current_stock": 200,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-09-26",
+        "days_until_expiry": 74,
+        "expiry_date": "2026-07-03",
         "forecasted_daily_demand": 24,
         "estimated_days_to_sell": 8,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 74 days. Monitor usage."
       }
     ]
   },
@@ -218,7 +218,7 @@
     "medicine_name": "Vitamin D Plus",
     "forecast_summary": {
       "average_daily_demand": 26,
-      "total_30_day_forecast": 780,
+      "total_30_day_forecast": 779,
       "MAE": 4.14
     },
     "batches": [
@@ -226,34 +226,34 @@
         "batch_id": "Vit_0_202409",
         "batch_name": "Batch 1 (exp Nov 2024)",
         "current_stock": 453,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-25",
+        "days_until_expiry": 139,
+        "expiry_date": "2026-09-06",
         "forecasted_daily_demand": 26,
         "estimated_days_to_sell": 17,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Vit_1_202409",
         "batch_name": "Batch 2 (exp Nov 2024)",
         "current_stock": 453,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 39,
+        "expiry_date": "2026-05-29",
         "forecasted_daily_demand": 26,
         "estimated_days_to_sell": 17,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 39 days. Monitor usage."
       },
       {
         "batch_id": "Vit_2_202409",
         "batch_name": "Batch 3 (exp Sep 2025)",
         "current_stock": 455,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-09-26",
+        "days_until_expiry": 88,
+        "expiry_date": "2026-07-17",
         "forecasted_daily_demand": 26,
-        "estimated_days_to_sell": 17,
+        "estimated_days_to_sell": 18,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 88 days. Monitor usage."
       }
     ]
   },
@@ -269,34 +269,34 @@
         "batch_id": "Fex_0_202409",
         "batch_name": "Batch 1 (exp Oct 2024)",
         "current_stock": 133,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-26",
+        "days_until_expiry": 112,
+        "expiry_date": "2026-08-10",
         "forecasted_daily_demand": 9,
         "estimated_days_to_sell": 14,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Fex_1_202409",
         "batch_name": "Batch 2 (exp Oct 2024)",
         "current_stock": 133,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-11",
+        "days_until_expiry": 146,
+        "expiry_date": "2026-09-13",
         "forecasted_daily_demand": 9,
         "estimated_days_to_sell": 14,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Fex_2_202409",
         "batch_name": "Batch 3 (exp Sep 2025)",
         "current_stock": 133,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-09-26",
+        "days_until_expiry": 93,
+        "expiry_date": "2026-07-22",
         "forecasted_daily_demand": 9,
         "estimated_days_to_sell": 14,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -312,34 +312,34 @@
         "batch_id": "Cet_0_202409",
         "batch_name": "Batch 1 (exp Jun 2025)",
         "current_stock": 262,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 35,
+        "expiry_date": "2026-05-25",
         "forecasted_daily_demand": 30,
         "estimated_days_to_sell": 9,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 35 days. Monitor usage."
       },
       {
         "batch_id": "Cet_1_202409",
         "batch_name": "Batch 2 (exp Mar 2025)",
         "current_stock": 262,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 91,
+        "expiry_date": "2026-07-20",
         "forecasted_daily_demand": 30,
         "estimated_days_to_sell": 9,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Cet_2_202409",
         "batch_name": "Batch 3 (exp Dec 2024)",
         "current_stock": 264,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-12-25",
+        "days_until_expiry": 76,
+        "expiry_date": "2026-07-05",
         "forecasted_daily_demand": 30,
         "estimated_days_to_sell": 9,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 76 days. Monitor usage."
       }
     ]
   },
@@ -355,34 +355,34 @@
         "batch_id": "Ome_0_202409",
         "batch_name": "Batch 1 (exp Nov 2024)",
         "current_stock": 246,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 32,
+        "expiry_date": "2026-05-22",
         "forecasted_daily_demand": 15,
         "estimated_days_to_sell": 17,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 32 days. Monitor usage."
       },
       {
         "batch_id": "Ome_1_202409",
         "batch_name": "Batch 2 (exp Oct 2024)",
         "current_stock": 246,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-26",
+        "days_until_expiry": 164,
+        "expiry_date": "2026-10-01",
         "forecasted_daily_demand": 15,
         "estimated_days_to_sell": 17,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Ome_2_202409",
         "batch_name": "Batch 3 (exp Sep 2025)",
         "current_stock": 246,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-09-26",
+        "days_until_expiry": 42,
+        "expiry_date": "2026-06-01",
         "forecasted_daily_demand": 15,
         "estimated_days_to_sell": 17,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 42 days. Monitor usage."
       }
     ]
   },
@@ -398,34 +398,34 @@
         "batch_id": "Dox_0_202409",
         "batch_name": "Batch 1 (exp Sep 2025)",
         "current_stock": 117,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-09-26",
+        "days_until_expiry": 113,
+        "expiry_date": "2026-08-11",
         "forecasted_daily_demand": 6,
         "estimated_days_to_sell": 19,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Dox_1_202409",
         "batch_name": "Batch 2 (exp Sep 2025)",
         "current_stock": 117,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-09-26",
+        "days_until_expiry": 74,
+        "expiry_date": "2026-07-03",
         "forecasted_daily_demand": 6,
         "estimated_days_to_sell": 19,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 74 days. Monitor usage."
       },
       {
         "batch_id": "Dox_2_202409",
         "batch_name": "Batch 3 (exp Oct 2024)",
         "current_stock": 118,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-11",
+        "days_until_expiry": 129,
+        "expiry_date": "2026-08-27",
         "forecasted_daily_demand": 6,
         "estimated_days_to_sell": 20,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -441,34 +441,34 @@
         "batch_id": "Pan_0_202409",
         "batch_name": "Batch 1 (exp Oct 2024)",
         "current_stock": 249,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-26",
+        "days_until_expiry": 111,
+        "expiry_date": "2026-08-09",
         "forecasted_daily_demand": 12,
         "estimated_days_to_sell": 21,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Pan_1_202409",
         "batch_name": "Batch 2 (exp Nov 2024)",
         "current_stock": 249,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 102,
+        "expiry_date": "2026-07-31",
         "forecasted_daily_demand": 12,
         "estimated_days_to_sell": 21,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Pan_2_202409",
         "batch_name": "Batch 3 (exp Sep 2025)",
         "current_stock": 250,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-09-26",
+        "days_until_expiry": 34,
+        "expiry_date": "2026-05-24",
         "forecasted_daily_demand": 12,
         "estimated_days_to_sell": 21,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 34 days. Monitor usage."
       }
     ]
   },
@@ -484,34 +484,34 @@
         "batch_id": "Cip_0_202409",
         "batch_name": "Batch 1 (exp Dec 2024)",
         "current_stock": 132,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-12-25",
+        "days_until_expiry": 159,
+        "expiry_date": "2026-09-26",
         "forecasted_daily_demand": 7,
         "estimated_days_to_sell": 19,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Cip_1_202409",
         "batch_name": "Batch 2 (exp Nov 2024)",
         "current_stock": 132,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 105,
+        "expiry_date": "2026-08-03",
         "forecasted_daily_demand": 7,
         "estimated_days_to_sell": 19,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Cip_2_202409",
         "batch_name": "Batch 3 (exp Mar 2025)",
         "current_stock": 132,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 103,
+        "expiry_date": "2026-08-01",
         "forecasted_daily_demand": 7,
         "estimated_days_to_sell": 19,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -527,34 +527,34 @@
         "batch_id": "Ran_0_202409",
         "batch_name": "Batch 1 (exp Nov 2024)",
         "current_stock": 75,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 108,
+        "expiry_date": "2026-08-06",
         "forecasted_daily_demand": 10,
         "estimated_days_to_sell": 7,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Ran_1_202409",
         "batch_name": "Batch 2 (exp Nov 2024)",
         "current_stock": 75,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 58,
+        "expiry_date": "2026-06-17",
         "forecasted_daily_demand": 10,
         "estimated_days_to_sell": 7,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 58 days. Monitor usage."
       },
       {
         "batch_id": "Ran_2_202409",
         "batch_name": "Batch 3 (exp Jun 2025)",
         "current_stock": 76,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 73,
+        "expiry_date": "2026-07-02",
         "forecasted_daily_demand": 10,
         "estimated_days_to_sell": 7,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 73 days. Monitor usage."
       }
     ]
   },
@@ -570,34 +570,34 @@
         "batch_id": "Azi_0_202409",
         "batch_name": "Batch 1 (exp Dec 2024)",
         "current_stock": 152,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-12-25",
+        "days_until_expiry": 50,
+        "expiry_date": "2026-06-09",
         "forecasted_daily_demand": 8,
         "estimated_days_to_sell": 18,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 50 days. Monitor usage."
       },
       {
         "batch_id": "Azi_1_202409",
         "batch_name": "Batch 2 (exp Sep 2025)",
         "current_stock": 152,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-09-26",
+        "days_until_expiry": 110,
+        "expiry_date": "2026-08-08",
         "forecasted_daily_demand": 8,
         "estimated_days_to_sell": 18,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Azi_2_202409",
         "batch_name": "Batch 3 (exp Dec 2024)",
         "current_stock": 154,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-12-25",
+        "days_until_expiry": 142,
+        "expiry_date": "2026-09-09",
         "forecasted_daily_demand": 8,
         "estimated_days_to_sell": 19,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -613,34 +613,34 @@
         "batch_id": "Met_0_202409",
         "batch_name": "Batch 1 (exp Dec 2024)",
         "current_stock": 392,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-12-25",
+        "days_until_expiry": 138,
+        "expiry_date": "2026-09-05",
         "forecasted_daily_demand": 29,
         "estimated_days_to_sell": 14,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Met_1_202409",
         "batch_name": "Batch 2 (exp Nov 2024)",
         "current_stock": 392,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-25",
+        "days_until_expiry": 151,
+        "expiry_date": "2026-09-18",
         "forecasted_daily_demand": 29,
         "estimated_days_to_sell": 14,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Met_2_202409",
         "batch_name": "Batch 3 (exp Mar 2025)",
         "current_stock": 393,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 165,
+        "expiry_date": "2026-10-02",
         "forecasted_daily_demand": 29,
         "estimated_days_to_sell": 14,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -656,34 +656,34 @@
         "batch_id": "Gli_0_202409",
         "batch_name": "Batch 1 (exp Jun 2025)",
         "current_stock": 173,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 42,
+        "expiry_date": "2026-06-01",
         "forecasted_daily_demand": 17,
         "estimated_days_to_sell": 10,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 42 days. Monitor usage."
       },
       {
         "batch_id": "Gli_1_202409",
         "batch_name": "Batch 2 (exp Mar 2025)",
         "current_stock": 173,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 143,
+        "expiry_date": "2026-09-10",
         "forecasted_daily_demand": 17,
         "estimated_days_to_sell": 10,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Gli_2_202409",
         "batch_name": "Batch 3 (exp Mar 2025)",
         "current_stock": 175,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 55,
+        "expiry_date": "2026-06-14",
         "forecasted_daily_demand": 17,
         "estimated_days_to_sell": 10,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 55 days. Monitor usage."
       }
     ]
   },
@@ -691,7 +691,7 @@
     "medicine_name": "Amoxicillin",
     "forecast_summary": {
       "average_daily_demand": 12,
-      "total_30_day_forecast": 364,
+      "total_30_day_forecast": 365,
       "MAE": 1.81
     },
     "batches": [
@@ -699,34 +699,34 @@
         "batch_id": "Amo_0_202409",
         "batch_name": "Batch 1 (exp Jun 2025)",
         "current_stock": 115,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 39,
+        "expiry_date": "2026-05-29",
         "forecasted_daily_demand": 12,
         "estimated_days_to_sell": 9,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 39 days. Monitor usage."
       },
       {
         "batch_id": "Amo_1_202409",
         "batch_name": "Batch 2 (exp Nov 2024)",
         "current_stock": 115,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 51,
+        "expiry_date": "2026-06-10",
         "forecasted_daily_demand": 12,
         "estimated_days_to_sell": 9,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 51 days. Monitor usage."
       },
       {
         "batch_id": "Amo_2_202409",
         "batch_name": "Batch 3 (exp Sep 2025)",
         "current_stock": 117,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-09-26",
+        "days_until_expiry": 163,
+        "expiry_date": "2026-09-30",
         "forecasted_daily_demand": 12,
         "estimated_days_to_sell": 10,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -742,34 +742,34 @@
         "batch_id": "Pio_0_202409",
         "batch_name": "Batch 1 (exp Nov 2024)",
         "current_stock": 185,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-25",
+        "days_until_expiry": 74,
+        "expiry_date": "2026-07-03",
         "forecasted_daily_demand": 11,
         "estimated_days_to_sell": 18,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 74 days. Monitor usage."
       },
       {
         "batch_id": "Pio_1_202409",
         "batch_name": "Batch 2 (exp Oct 2024)",
         "current_stock": 185,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-11",
+        "days_until_expiry": 102,
+        "expiry_date": "2026-07-31",
         "forecasted_daily_demand": 11,
         "estimated_days_to_sell": 18,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Pio_2_202409",
         "batch_name": "Batch 3 (exp Mar 2025)",
         "current_stock": 187,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 100,
+        "expiry_date": "2026-07-29",
         "forecasted_daily_demand": 11,
         "estimated_days_to_sell": 18,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -785,34 +785,34 @@
         "batch_id": "Asp_0_202409",
         "batch_name": "Batch 1 (exp Mar 2025)",
         "current_stock": 75,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 82,
+        "expiry_date": "2026-07-11",
         "forecasted_daily_demand": 11,
         "estimated_days_to_sell": 7,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 82 days. Monitor usage."
       },
       {
         "batch_id": "Asp_1_202409",
         "batch_name": "Batch 2 (exp Dec 2024)",
         "current_stock": 75,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-12-25",
+        "days_until_expiry": 157,
+        "expiry_date": "2026-09-24",
         "forecasted_daily_demand": 11,
         "estimated_days_to_sell": 7,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Asp_2_202409",
         "batch_name": "Batch 3 (exp Dec 2024)",
         "current_stock": 76,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-12-25",
+        "days_until_expiry": 145,
+        "expiry_date": "2026-09-12",
         "forecasted_daily_demand": 11,
         "estimated_days_to_sell": 7,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -828,34 +828,34 @@
         "batch_id": "Aml_0_202409",
         "batch_name": "Batch 1 (exp Nov 2024)",
         "current_stock": 202,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-25",
+        "days_until_expiry": 128,
+        "expiry_date": "2026-08-26",
         "forecasted_daily_demand": 20,
         "estimated_days_to_sell": 10,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Aml_1_202409",
         "batch_name": "Batch 2 (exp Oct 2024)",
         "current_stock": 202,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-11",
+        "days_until_expiry": 175,
+        "expiry_date": "2026-10-12",
         "forecasted_daily_demand": 20,
         "estimated_days_to_sell": 10,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Aml_2_202409",
         "batch_name": "Batch 3 (exp Jun 2025)",
         "current_stock": 203,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 93,
+        "expiry_date": "2026-07-22",
         "forecasted_daily_demand": 20,
         "estimated_days_to_sell": 10,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -871,34 +871,34 @@
         "batch_id": "Com_0_202409",
         "batch_name": "Batch 1 (exp Oct 2024)",
         "current_stock": 246,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-26",
+        "days_until_expiry": 126,
+        "expiry_date": "2026-08-24",
         "forecasted_daily_demand": 17,
         "estimated_days_to_sell": 15,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Com_1_202409",
         "batch_name": "Batch 2 (exp Nov 2024)",
         "current_stock": 246,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 58,
+        "expiry_date": "2026-06-17",
         "forecasted_daily_demand": 17,
         "estimated_days_to_sell": 15,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 58 days. Monitor usage."
       },
       {
         "batch_id": "Com_2_202409",
         "batch_name": "Batch 3 (exp Oct 2024)",
         "current_stock": 247,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-11",
+        "days_until_expiry": 177,
+        "expiry_date": "2026-10-14",
         "forecasted_daily_demand": 17,
         "estimated_days_to_sell": 15,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -906,7 +906,7 @@
     "medicine_name": "Losartan Plus",
     "forecast_summary": {
       "average_daily_demand": 16,
-      "total_30_day_forecast": 494,
+      "total_30_day_forecast": 492,
       "MAE": 2.92
     },
     "batches": [
@@ -914,34 +914,34 @@
         "batch_id": "Los_0_202409",
         "batch_name": "Batch 1 (exp Jun 2025)",
         "current_stock": 280,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 70,
+        "expiry_date": "2026-06-29",
         "forecasted_daily_demand": 16,
         "estimated_days_to_sell": 17,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 70 days. Monitor usage."
       },
       {
         "batch_id": "Los_1_202409",
         "batch_name": "Batch 2 (exp Oct 2024)",
         "current_stock": 280,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-11",
+        "days_until_expiry": 165,
+        "expiry_date": "2026-10-02",
         "forecasted_daily_demand": 16,
         "estimated_days_to_sell": 17,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Los_2_202409",
         "batch_name": "Batch 3 (exp Nov 2024)",
         "current_stock": 280,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-25",
+        "days_until_expiry": 39,
+        "expiry_date": "2026-05-29",
         "forecasted_daily_demand": 16,
         "estimated_days_to_sell": 17,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 39 days. Monitor usage."
       }
     ]
   },
@@ -949,7 +949,7 @@
     "medicine_name": "Omeprazole",
     "forecast_summary": {
       "average_daily_demand": 17,
-      "total_30_day_forecast": 511,
+      "total_30_day_forecast": 512,
       "MAE": 1.63
     },
     "batches": [
@@ -957,34 +957,34 @@
         "batch_id": "Ome_0_202409",
         "batch_name": "Batch 1 (exp Mar 2025)",
         "current_stock": 336,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 32,
+        "expiry_date": "2026-05-22",
         "forecasted_daily_demand": 17,
         "estimated_days_to_sell": 20,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 32 days. Monitor usage."
       },
       {
         "batch_id": "Ome_1_202409",
         "batch_name": "Batch 2 (exp Mar 2025)",
         "current_stock": 336,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 164,
+        "expiry_date": "2026-10-01",
         "forecasted_daily_demand": 17,
         "estimated_days_to_sell": 20,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Ome_2_202409",
         "batch_name": "Batch 3 (exp Oct 2024)",
         "current_stock": 337,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-11",
+        "days_until_expiry": 42,
+        "expiry_date": "2026-06-01",
         "forecasted_daily_demand": 17,
         "estimated_days_to_sell": 20,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 42 days. Monitor usage."
       }
     ]
   },
@@ -992,7 +992,7 @@
     "medicine_name": "Dolo 650",
     "forecast_summary": {
       "average_daily_demand": 22,
-      "total_30_day_forecast": 649,
+      "total_30_day_forecast": 648,
       "MAE": 3.46
     },
     "batches": [
@@ -1000,34 +1000,34 @@
         "batch_id": "Dol_0_202409",
         "batch_name": "Batch 1 (exp Nov 2024)",
         "current_stock": 297,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 146,
+        "expiry_date": "2026-09-13",
         "forecasted_daily_demand": 22,
         "estimated_days_to_sell": 14,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Dol_1_202409",
         "batch_name": "Batch 2 (exp Oct 2024)",
         "current_stock": 297,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-26",
+        "days_until_expiry": 168,
+        "expiry_date": "2026-10-05",
         "forecasted_daily_demand": 22,
         "estimated_days_to_sell": 14,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Dol_2_202409",
         "batch_name": "Batch 3 (exp Oct 2024)",
         "current_stock": 297,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-11",
+        "days_until_expiry": 179,
+        "expiry_date": "2026-10-16",
         "forecasted_daily_demand": 22,
         "estimated_days_to_sell": 14,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -1043,34 +1043,34 @@
         "batch_id": "Dox_0_202409",
         "batch_name": "Batch 1 (exp Nov 2024)",
         "current_stock": 84,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 113,
+        "expiry_date": "2026-08-11",
         "forecasted_daily_demand": 5,
         "estimated_days_to_sell": 17,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Dox_1_202409",
         "batch_name": "Batch 2 (exp Mar 2025)",
         "current_stock": 84,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 74,
+        "expiry_date": "2026-07-03",
         "forecasted_daily_demand": 5,
         "estimated_days_to_sell": 17,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 74 days. Monitor usage."
       },
       {
         "batch_id": "Dox_2_202409",
         "batch_name": "Batch 3 (exp Mar 2025)",
         "current_stock": 86,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 129,
+        "expiry_date": "2026-08-27",
         "forecasted_daily_demand": 5,
         "estimated_days_to_sell": 17,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -1086,77 +1086,77 @@
         "batch_id": "Cip_0_202409",
         "batch_name": "Batch 1 (exp Oct 2024)",
         "current_stock": 48,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-11",
+        "days_until_expiry": 159,
+        "expiry_date": "2026-09-26",
         "forecasted_daily_demand": 6,
         "estimated_days_to_sell": 8,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Cip_1_202409",
         "batch_name": "Batch 2 (exp Mar 2025)",
         "current_stock": 48,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 105,
+        "expiry_date": "2026-08-03",
         "forecasted_daily_demand": 6,
         "estimated_days_to_sell": 8,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Cip_2_202409",
         "batch_name": "Batch 3 (exp Jun 2025)",
         "current_stock": 48,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 103,
+        "expiry_date": "2026-08-01",
         "forecasted_daily_demand": 6,
         "estimated_days_to_sell": 8,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
   {
     "medicine_name": "Multivitamin",
     "forecast_summary": {
-      "average_daily_demand": 26,
+      "average_daily_demand": 25,
       "total_30_day_forecast": 765,
-      "MAE": 4.79
+      "MAE": 4.78
     },
     "batches": [
       {
         "batch_id": "Mul_0_202409",
         "batch_name": "Batch 1 (exp Nov 2024)",
         "current_stock": 334,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
-        "forecasted_daily_demand": 26,
+        "days_until_expiry": 129,
+        "expiry_date": "2026-08-27",
+        "forecasted_daily_demand": 25,
         "estimated_days_to_sell": 13,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Mul_1_202409",
         "batch_name": "Batch 2 (exp Sep 2025)",
         "current_stock": 334,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-09-26",
-        "forecasted_daily_demand": 26,
+        "days_until_expiry": 44,
+        "expiry_date": "2026-06-03",
+        "forecasted_daily_demand": 25,
         "estimated_days_to_sell": 13,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 44 days. Monitor usage."
       },
       {
         "batch_id": "Mul_2_202409",
         "batch_name": "Batch 3 (exp Mar 2025)",
         "current_stock": 334,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
-        "forecasted_daily_demand": 26,
+        "days_until_expiry": 76,
+        "expiry_date": "2026-07-05",
+        "forecasted_daily_demand": 25,
         "estimated_days_to_sell": 13,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 76 days. Monitor usage."
       }
     ]
   },
@@ -1172,34 +1172,34 @@
         "batch_id": "Sin_0_202409",
         "batch_name": "Batch 1 (exp Jun 2025)",
         "current_stock": 216,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 31,
+        "expiry_date": "2026-05-21",
         "forecasted_daily_demand": 9,
         "estimated_days_to_sell": 23,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 31 days. Monitor usage."
       },
       {
         "batch_id": "Sin_1_202409",
         "batch_name": "Batch 2 (exp Sep 2025)",
         "current_stock": 216,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-09-26",
+        "days_until_expiry": 56,
+        "expiry_date": "2026-06-15",
         "forecasted_daily_demand": 9,
         "estimated_days_to_sell": 23,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 56 days. Monitor usage."
       },
       {
         "batch_id": "Sin_2_202409",
         "batch_name": "Batch 3 (exp Oct 2024)",
         "current_stock": 216,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-26",
+        "days_until_expiry": 86,
+        "expiry_date": "2026-07-15",
         "forecasted_daily_demand": 9,
         "estimated_days_to_sell": 23,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 86 days. Monitor usage."
       }
     ]
   },
@@ -1207,7 +1207,7 @@
     "medicine_name": "Calcium",
     "forecast_summary": {
       "average_daily_demand": 22,
-      "total_30_day_forecast": 648,
+      "total_30_day_forecast": 649,
       "MAE": 3.25
     },
     "batches": [
@@ -1215,34 +1215,34 @@
         "batch_id": "Cal_0_202409",
         "batch_name": "Batch 1 (exp Oct 2024)",
         "current_stock": 328,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-26",
+        "days_until_expiry": 136,
+        "expiry_date": "2026-09-03",
         "forecasted_daily_demand": 22,
         "estimated_days_to_sell": 15,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Cal_1_202409",
         "batch_name": "Batch 2 (exp Nov 2024)",
         "current_stock": 328,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 102,
+        "expiry_date": "2026-07-31",
         "forecasted_daily_demand": 22,
         "estimated_days_to_sell": 15,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Cal_2_202409",
         "batch_name": "Batch 3 (exp Jun 2025)",
         "current_stock": 328,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 130,
+        "expiry_date": "2026-08-28",
         "forecasted_daily_demand": 22,
         "estimated_days_to_sell": 15,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -1258,34 +1258,34 @@
         "batch_id": "Vic_0_202409",
         "batch_name": "Batch 1 (exp Nov 2024)",
         "current_stock": 329,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 87,
+        "expiry_date": "2026-07-16",
         "forecasted_daily_demand": 14,
         "estimated_days_to_sell": 24,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 87 days. Monitor usage."
       },
       {
         "batch_id": "Vic_1_202409",
         "batch_name": "Batch 2 (exp Jun 2025)",
         "current_stock": 329,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 174,
+        "expiry_date": "2026-10-11",
         "forecasted_daily_demand": 14,
         "estimated_days_to_sell": 24,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Vic_2_202409",
         "batch_name": "Batch 3 (exp Oct 2024)",
         "current_stock": 330,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-11",
+        "days_until_expiry": 99,
+        "expiry_date": "2026-07-28",
         "forecasted_daily_demand": 14,
         "estimated_days_to_sell": 24,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -1293,7 +1293,7 @@
     "medicine_name": "Vitamin D",
     "forecast_summary": {
       "average_daily_demand": 27,
-      "total_30_day_forecast": 806,
+      "total_30_day_forecast": 807,
       "MAE": 3.64
     },
     "batches": [
@@ -1301,34 +1301,34 @@
         "batch_id": "Vit_0_202409",
         "batch_name": "Batch 1 (exp Nov 2024)",
         "current_stock": 399,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 139,
+        "expiry_date": "2026-09-06",
         "forecasted_daily_demand": 27,
         "estimated_days_to_sell": 15,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Vit_1_202409",
         "batch_name": "Batch 2 (exp Oct 2024)",
         "current_stock": 399,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-26",
+        "days_until_expiry": 39,
+        "expiry_date": "2026-05-29",
         "forecasted_daily_demand": 27,
         "estimated_days_to_sell": 15,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 39 days. Monitor usage."
       },
       {
         "batch_id": "Vit_2_202409",
         "batch_name": "Batch 3 (exp Nov 2024)",
         "current_stock": 401,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 88,
+        "expiry_date": "2026-07-17",
         "forecasted_daily_demand": 27,
         "estimated_days_to_sell": 15,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 88 days. Monitor usage."
       }
     ]
   },
@@ -1344,34 +1344,34 @@
         "batch_id": "Chy_0_202409",
         "batch_name": "Batch 1 (exp Nov 2024)",
         "current_stock": 81,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-25",
+        "days_until_expiry": 108,
+        "expiry_date": "2026-08-06",
         "forecasted_daily_demand": 9,
         "estimated_days_to_sell": 9,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Chy_1_202409",
         "batch_name": "Batch 2 (exp Mar 2025)",
         "current_stock": 81,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 36,
+        "expiry_date": "2026-05-26",
         "forecasted_daily_demand": 9,
         "estimated_days_to_sell": 9,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 36 days. Monitor usage."
       },
       {
         "batch_id": "Chy_2_202409",
         "batch_name": "Batch 3 (exp Oct 2024)",
         "current_stock": 82,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-26",
+        "days_until_expiry": 151,
+        "expiry_date": "2026-09-18",
         "forecasted_daily_demand": 9,
         "estimated_days_to_sell": 10,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -1387,34 +1387,34 @@
         "batch_id": "Met_0_202409",
         "batch_name": "Batch 1 (exp Jun 2025)",
         "current_stock": 200,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 138,
+        "expiry_date": "2026-09-05",
         "forecasted_daily_demand": 16,
         "estimated_days_to_sell": 13,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Met_1_202409",
         "batch_name": "Batch 2 (exp Oct 2024)",
         "current_stock": 200,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-26",
+        "days_until_expiry": 151,
+        "expiry_date": "2026-09-18",
         "forecasted_daily_demand": 16,
         "estimated_days_to_sell": 13,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Met_2_202409",
         "batch_name": "Batch 3 (exp Nov 2024)",
         "current_stock": 200,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 165,
+        "expiry_date": "2026-10-02",
         "forecasted_daily_demand": 16,
         "estimated_days_to_sell": 13,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -1422,7 +1422,7 @@
     "medicine_name": "Calcium Plus",
     "forecast_summary": {
       "average_daily_demand": 19,
-      "total_30_day_forecast": 580,
+      "total_30_day_forecast": 581,
       "MAE": 3.18
     },
     "batches": [
@@ -1430,34 +1430,34 @@
         "batch_id": "Cal_0_202409",
         "batch_name": "Batch 1 (exp Oct 2024)",
         "current_stock": 319,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-26",
+        "days_until_expiry": 136,
+        "expiry_date": "2026-09-03",
         "forecasted_daily_demand": 19,
         "estimated_days_to_sell": 16,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Cal_1_202409",
         "batch_name": "Batch 2 (exp Nov 2024)",
         "current_stock": 319,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-25",
+        "days_until_expiry": 102,
+        "expiry_date": "2026-07-31",
         "forecasted_daily_demand": 19,
         "estimated_days_to_sell": 16,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Cal_2_202409",
         "batch_name": "Batch 3 (exp Nov 2024)",
         "current_stock": 321,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 130,
+        "expiry_date": "2026-08-28",
         "forecasted_daily_demand": 19,
         "estimated_days_to_sell": 17,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -1473,34 +1473,34 @@
         "batch_id": "Tri_0_202409",
         "batch_name": "Batch 1 (exp Mar 2025)",
         "current_stock": 62,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 165,
+        "expiry_date": "2026-10-02",
         "forecasted_daily_demand": 6,
         "estimated_days_to_sell": 11,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Tri_1_202409",
         "batch_name": "Batch 2 (exp Nov 2024)",
         "current_stock": 62,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-25",
+        "days_until_expiry": 127,
+        "expiry_date": "2026-08-25",
         "forecasted_daily_demand": 6,
         "estimated_days_to_sell": 11,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Tri_2_202409",
         "batch_name": "Batch 3 (exp Jun 2025)",
         "current_stock": 62,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 135,
+        "expiry_date": "2026-09-02",
         "forecasted_daily_demand": 6,
         "estimated_days_to_sell": 11,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -1509,41 +1509,41 @@
     "forecast_summary": {
       "average_daily_demand": 24,
       "total_30_day_forecast": 721,
-      "MAE": 4.07
+      "MAE": 4.08
     },
     "batches": [
       {
         "batch_id": "Par_0_202409",
         "batch_name": "Batch 1 (exp Nov 2024)",
         "current_stock": 201,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 79,
+        "expiry_date": "2026-07-08",
         "forecasted_daily_demand": 24,
         "estimated_days_to_sell": 8,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 79 days. Monitor usage."
       },
       {
         "batch_id": "Par_1_202409",
         "batch_name": "Batch 2 (exp Jun 2025)",
         "current_stock": 201,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 51,
+        "expiry_date": "2026-06-10",
         "forecasted_daily_demand": 24,
         "estimated_days_to_sell": 8,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 51 days. Monitor usage."
       },
       {
         "batch_id": "Par_2_202409",
         "batch_name": "Batch 3 (exp Nov 2024)",
         "current_stock": 202,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-25",
+        "days_until_expiry": 112,
+        "expiry_date": "2026-08-10",
         "forecasted_daily_demand": 24,
         "estimated_days_to_sell": 8,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -1552,41 +1552,41 @@
     "forecast_summary": {
       "average_daily_demand": 19,
       "total_30_day_forecast": 574,
-      "MAE": 3.36
+      "MAE": 3.37
     },
     "batches": [
       {
         "batch_id": "Los_0_202409",
         "batch_name": "Batch 1 (exp Mar 2025)",
         "current_stock": 285,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 70,
+        "expiry_date": "2026-06-29",
         "forecasted_daily_demand": 19,
         "estimated_days_to_sell": 15,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 70 days. Monitor usage."
       },
       {
         "batch_id": "Los_1_202409",
         "batch_name": "Batch 2 (exp Mar 2025)",
         "current_stock": 285,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 165,
+        "expiry_date": "2026-10-02",
         "forecasted_daily_demand": 19,
         "estimated_days_to_sell": 15,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Los_2_202409",
         "batch_name": "Batch 3 (exp Mar 2025)",
         "current_stock": 286,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 39,
+        "expiry_date": "2026-05-29",
         "forecasted_daily_demand": 19,
         "estimated_days_to_sell": 15,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 39 days. Monitor usage."
       }
     ]
   },
@@ -1602,34 +1602,34 @@
         "batch_id": "Dol_0_202409",
         "batch_name": "Batch 1 (exp Oct 2024)",
         "current_stock": 222,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-26",
+        "days_until_expiry": 146,
+        "expiry_date": "2026-09-13",
         "forecasted_daily_demand": 19,
         "estimated_days_to_sell": 12,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Dol_1_202409",
         "batch_name": "Batch 2 (exp Oct 2024)",
         "current_stock": 222,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-11",
+        "days_until_expiry": 168,
+        "expiry_date": "2026-10-05",
         "forecasted_daily_demand": 19,
         "estimated_days_to_sell": 12,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Dol_2_202409",
         "batch_name": "Batch 3 (exp Mar 2025)",
         "current_stock": 224,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 179,
+        "expiry_date": "2026-10-16",
         "forecasted_daily_demand": 19,
         "estimated_days_to_sell": 12,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -1645,34 +1645,34 @@
         "batch_id": "Aml_0_202409",
         "batch_name": "Batch 1 (exp Oct 2024)",
         "current_stock": 217,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-26",
+        "days_until_expiry": 128,
+        "expiry_date": "2026-08-26",
         "forecasted_daily_demand": 23,
         "estimated_days_to_sell": 9,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Aml_1_202409",
         "batch_name": "Batch 2 (exp Nov 2024)",
         "current_stock": 217,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 175,
+        "expiry_date": "2026-10-12",
         "forecasted_daily_demand": 23,
         "estimated_days_to_sell": 9,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Aml_2_202409",
         "batch_name": "Batch 3 (exp Nov 2024)",
         "current_stock": 219,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-25",
+        "days_until_expiry": 93,
+        "expiry_date": "2026-07-22",
         "forecasted_daily_demand": 23,
         "estimated_days_to_sell": 10,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -1688,34 +1688,34 @@
         "batch_id": "Com_0_202409",
         "batch_name": "Batch 1 (exp Jun 2025)",
         "current_stock": 271,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 126,
+        "expiry_date": "2026-08-24",
         "forecasted_daily_demand": 14,
         "estimated_days_to_sell": 20,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Com_1_202409",
         "batch_name": "Batch 2 (exp Jun 2025)",
         "current_stock": 271,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 58,
+        "expiry_date": "2026-06-17",
         "forecasted_daily_demand": 14,
         "estimated_days_to_sell": 20,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 58 days. Monitor usage."
       },
       {
         "batch_id": "Com_2_202409",
         "batch_name": "Batch 3 (exp Nov 2024)",
         "current_stock": 273,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-25",
+        "days_until_expiry": 177,
+        "expiry_date": "2026-10-14",
         "forecasted_daily_demand": 14,
         "estimated_days_to_sell": 20,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -1731,34 +1731,34 @@
         "batch_id": "Pio_0_202409",
         "batch_name": "Batch 1 (exp Jun 2025)",
         "current_stock": 164,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 74,
+        "expiry_date": "2026-07-03",
         "forecasted_daily_demand": 13,
         "estimated_days_to_sell": 13,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 74 days. Monitor usage."
       },
       {
         "batch_id": "Pio_1_202409",
         "batch_name": "Batch 2 (exp Sep 2025)",
         "current_stock": 164,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-09-26",
+        "days_until_expiry": 102,
+        "expiry_date": "2026-07-31",
         "forecasted_daily_demand": 13,
         "estimated_days_to_sell": 13,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Pio_2_202409",
         "batch_name": "Batch 3 (exp Sep 2025)",
         "current_stock": 164,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-09-26",
+        "days_until_expiry": 100,
+        "expiry_date": "2026-07-29",
         "forecasted_daily_demand": 13,
         "estimated_days_to_sell": 13,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -1774,34 +1774,34 @@
         "batch_id": "Asp_0_202409",
         "batch_name": "Batch 1 (exp Nov 2024)",
         "current_stock": 122,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-10",
+        "days_until_expiry": 82,
+        "expiry_date": "2026-07-11",
         "forecasted_daily_demand": 9,
         "estimated_days_to_sell": 13,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 82 days. Monitor usage."
       },
       {
         "batch_id": "Asp_1_202409",
         "batch_name": "Batch 2 (exp Jun 2025)",
         "current_stock": 122,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 157,
+        "expiry_date": "2026-09-24",
         "forecasted_daily_demand": 9,
         "estimated_days_to_sell": 13,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Asp_2_202409",
         "batch_name": "Batch 3 (exp Dec 2024)",
         "current_stock": 123,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-12-25",
+        "days_until_expiry": 145,
+        "expiry_date": "2026-09-12",
         "forecasted_daily_demand": 9,
         "estimated_days_to_sell": 13,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -1817,34 +1817,34 @@
         "batch_id": "Gli_0_202409",
         "batch_name": "Batch 1 (exp Oct 2024)",
         "current_stock": 202,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-11",
+        "days_until_expiry": 42,
+        "expiry_date": "2026-06-01",
         "forecasted_daily_demand": 18,
         "estimated_days_to_sell": 11,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 42 days. Monitor usage."
       },
       {
         "batch_id": "Gli_1_202409",
         "batch_name": "Batch 2 (exp Mar 2025)",
         "current_stock": 202,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 143,
+        "expiry_date": "2026-09-10",
         "forecasted_daily_demand": 18,
         "estimated_days_to_sell": 11,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Gli_2_202409",
         "batch_name": "Batch 3 (exp Mar 2025)",
         "current_stock": 202,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 55,
+        "expiry_date": "2026-06-14",
         "forecasted_daily_demand": 18,
         "estimated_days_to_sell": 11,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 55 days. Monitor usage."
       }
     ]
   },
@@ -1860,34 +1860,34 @@
         "batch_id": "Amo_0_202409",
         "batch_name": "Batch 1 (exp Mar 2025)",
         "current_stock": 124,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 39,
+        "expiry_date": "2026-05-29",
         "forecasted_daily_demand": 11,
         "estimated_days_to_sell": 12,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 39 days. Monitor usage."
       },
       {
         "batch_id": "Amo_1_202409",
         "batch_name": "Batch 2 (exp Sep 2025)",
         "current_stock": 124,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-09-26",
+        "days_until_expiry": 51,
+        "expiry_date": "2026-06-10",
         "forecasted_daily_demand": 11,
         "estimated_days_to_sell": 12,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 51 days. Monitor usage."
       },
       {
         "batch_id": "Amo_2_202409",
         "batch_name": "Batch 3 (exp Nov 2024)",
         "current_stock": 125,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-25",
+        "days_until_expiry": 163,
+        "expiry_date": "2026-09-30",
         "forecasted_daily_demand": 11,
         "estimated_days_to_sell": 12,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -1896,41 +1896,41 @@
     "forecast_summary": {
       "average_daily_demand": 32,
       "total_30_day_forecast": 967,
-      "MAE": 5.91
+      "MAE": 5.92
     },
     "batches": [
       {
         "batch_id": "Met_0_202409",
         "batch_name": "Batch 1 (exp Dec 2024)",
         "current_stock": 355,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-12-25",
+        "days_until_expiry": 138,
+        "expiry_date": "2026-09-05",
         "forecasted_daily_demand": 32,
         "estimated_days_to_sell": 11,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Met_1_202409",
         "batch_name": "Batch 2 (exp Jun 2025)",
         "current_stock": 355,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 151,
+        "expiry_date": "2026-09-18",
         "forecasted_daily_demand": 32,
         "estimated_days_to_sell": 11,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Met_2_202409",
         "batch_name": "Batch 3 (exp Oct 2024)",
         "current_stock": 355,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-11",
+        "days_until_expiry": 165,
+        "expiry_date": "2026-10-02",
         "forecasted_daily_demand": 32,
         "estimated_days_to_sell": 11,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -1946,34 +1946,34 @@
         "batch_id": "Azi_0_202409",
         "batch_name": "Batch 1 (exp Dec 2024)",
         "current_stock": 102,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-12-25",
+        "days_until_expiry": 50,
+        "expiry_date": "2026-06-09",
         "forecasted_daily_demand": 7,
         "estimated_days_to_sell": 14,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 50 days. Monitor usage."
       },
       {
         "batch_id": "Azi_1_202409",
         "batch_name": "Batch 2 (exp Dec 2024)",
         "current_stock": 102,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-12-25",
+        "days_until_expiry": 110,
+        "expiry_date": "2026-08-08",
         "forecasted_daily_demand": 7,
         "estimated_days_to_sell": 14,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Azi_2_202409",
         "batch_name": "Batch 3 (exp Dec 2024)",
         "current_stock": 102,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-12-25",
+        "days_until_expiry": 142,
+        "expiry_date": "2026-09-09",
         "forecasted_daily_demand": 7,
         "estimated_days_to_sell": 14,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -1989,34 +1989,34 @@
         "batch_id": "Ran_0_202409",
         "batch_name": "Batch 1 (exp Oct 2024)",
         "current_stock": 248,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-26",
+        "days_until_expiry": 108,
+        "expiry_date": "2026-08-06",
         "forecasted_daily_demand": 13,
         "estimated_days_to_sell": 19,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Ran_1_202409",
         "batch_name": "Batch 2 (exp Oct 2024)",
         "current_stock": 248,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-26",
+        "days_until_expiry": 58,
+        "expiry_date": "2026-06-17",
         "forecasted_daily_demand": 13,
         "estimated_days_to_sell": 19,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 58 days. Monitor usage."
       },
       {
         "batch_id": "Ran_2_202409",
         "batch_name": "Batch 3 (exp Sep 2025)",
         "current_stock": 248,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-09-26",
+        "days_until_expiry": 73,
+        "expiry_date": "2026-07-02",
         "forecasted_daily_demand": 13,
         "estimated_days_to_sell": 19,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 73 days. Monitor usage."
       }
     ]
   },
@@ -2032,34 +2032,34 @@
         "batch_id": "Pan_0_202409",
         "batch_name": "Batch 1 (exp Jun 2025)",
         "current_stock": 249,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-06-23",
+        "days_until_expiry": 111,
+        "expiry_date": "2026-08-09",
         "forecasted_daily_demand": 15,
         "estimated_days_to_sell": 17,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Pan_1_202409",
         "batch_name": "Batch 2 (exp Dec 2024)",
         "current_stock": 249,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-12-25",
+        "days_until_expiry": 102,
+        "expiry_date": "2026-07-31",
         "forecasted_daily_demand": 15,
         "estimated_days_to_sell": 17,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Pan_2_202409",
         "batch_name": "Batch 3 (exp Oct 2024)",
         "current_stock": 250,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-10-11",
+        "days_until_expiry": 34,
+        "expiry_date": "2026-05-24",
         "forecasted_daily_demand": 15,
         "estimated_days_to_sell": 17,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 34 days. Monitor usage."
       }
     ]
   },
@@ -2075,34 +2075,34 @@
         "batch_id": "Met_0_202409",
         "batch_name": "Batch 1 (exp Nov 2024)",
         "current_stock": 100,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-25",
+        "days_until_expiry": 138,
+        "expiry_date": "2026-09-05",
         "forecasted_daily_demand": 14,
         "estimated_days_to_sell": 7,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Met_1_202409",
         "batch_name": "Batch 2 (exp Nov 2024)",
         "current_stock": 100,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-11-25",
+        "days_until_expiry": 151,
+        "expiry_date": "2026-09-18",
         "forecasted_daily_demand": 14,
         "estimated_days_to_sell": 7,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Met_2_202409",
         "batch_name": "Batch 3 (exp Mar 2025)",
         "current_stock": 100,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 165,
+        "expiry_date": "2026-10-02",
         "forecasted_daily_demand": 14,
         "estimated_days_to_sell": 7,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   },
@@ -2118,34 +2118,34 @@
         "batch_id": "Col_0_202409",
         "batch_name": "Batch 1 (exp Mar 2025)",
         "current_stock": 213,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 112,
+        "expiry_date": "2026-08-10",
         "forecasted_daily_demand": 11,
         "estimated_days_to_sell": 19,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       },
       {
         "batch_id": "Col_1_202409",
         "batch_name": "Batch 2 (exp Dec 2024)",
         "current_stock": 213,
-        "days_until_expiry": 0,
-        "expiry_date": "2024-12-25",
+        "days_until_expiry": 48,
+        "expiry_date": "2026-06-07",
         "forecasted_daily_demand": 11,
         "estimated_days_to_sell": 19,
         "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_message": "\ud83d\udfe1 This batch expires in 48 days. Monitor usage."
       },
       {
         "batch_id": "Col_2_202409",
         "batch_name": "Batch 3 (exp Mar 2025)",
         "current_stock": 214,
-        "days_until_expiry": 0,
-        "expiry_date": "2025-03-25",
+        "days_until_expiry": 121,
+        "expiry_date": "2026-08-19",
         "forecasted_daily_demand": 11,
         "estimated_days_to_sell": 19,
-        "risk_level": "Medium",
-        "risk_message": "\ud83d\udfe1 This batch requires attention. Monitor usage and plan ahead."
+        "risk_level": "Low",
+        "risk_message": "\u2705 Stock is adequate. No immediate action needed."
       }
     ]
   }

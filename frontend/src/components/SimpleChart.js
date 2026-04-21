@@ -10,7 +10,8 @@ import {
   Legend,
   ArcElement,
   PointElement,
-  LineElement
+  LineElement,
+  Filler
 } from 'chart.js';
 
 // Register ChartJS components
@@ -23,7 +24,8 @@ ChartJS.register(
   Legend,
   ArcElement,
   PointElement,
-  LineElement
+  LineElement,
+  Filler
 );
 
 // Bar Chart Component
@@ -32,12 +34,13 @@ export const BarChart = ({ title, labels, data, colors, label }) => {
     labels: labels,
     datasets: [
       {
-        label: label || 'Value',
+        label: label || 'Stock Quantity',
         data: data,
-        backgroundColor: colors || 'rgba(76, 175, 80, 0.6)',
-        borderColor: 'rgba(76, 175, 80, 1)',
+        backgroundColor: colors || 'rgba(54, 162, 235, 0.7)',
+        borderColor: 'rgba(54, 162, 235, 1)',
         borderWidth: 1,
-        borderRadius: 5,
+        borderRadius: 8,
+        barPercentage: 0.7,
       },
     ],
   };
@@ -47,27 +50,35 @@ export const BarChart = ({ title, labels, data, colors, label }) => {
     maintainAspectRatio: false,
     plugins: {
       legend: {
-        position: 'bottom',
+        position: 'top',
+        labels: { font: { size: 12 } },
       },
-      title: {
-        display: true,
-        text: title,
-        font: { size: 16 },
-      },
+      tooltip: {
+        backgroundColor: '#1e293b',
+        titleColor: '#fff',
+        bodyColor: '#cbd5e1',
+        callbacks: {
+          label: function(context) {
+            return `${context.dataset.label}: ${context.raw.toLocaleString()} units`;
+          }
+        }
+      }
     },
     scales: {
       y: {
         beginAtZero: true,
-        title: {
-          display: true,
-          text: 'Units',
-        },
+        grid: { color: '#e2e8f0' },
+        title: { display: true, text: 'Stock Quantity (units)', font: { size: 12 } }
       },
+      x: {
+        grid: { display: false },
+        ticks: { font: { size: 11 } }
+      }
     },
   };
 
   return (
-    <div style={{ height: '300px', width: '100%' }}>
+    <div style={{ height: '320px', width: '100%' }}>
       <Bar data={chartData} options={options} />
     </div>
   );
@@ -80,8 +91,9 @@ export const PieChart = ({ title, labels, data, colors }) => {
     datasets: [
       {
         data: data,
-        backgroundColor: colors || ['#4caf50', '#ff9800', '#f44336', '#2196f3'],
+        backgroundColor: colors || ['#22c55e', '#eab308', '#f97316', '#ef4444', '#3b82f6'],
         borderWidth: 0,
+        hoverOffset: 8,
       },
     ],
   };
@@ -92,12 +104,17 @@ export const PieChart = ({ title, labels, data, colors }) => {
     plugins: {
       legend: {
         position: 'bottom',
+        labels: { font: { size: 11 }, usePointStyle: true, boxWidth: 10 }
       },
-      title: {
-        display: true,
-        text: title,
-        font: { size: 16 },
-      },
+      tooltip: {
+        callbacks: {
+          label: function(context) {
+            const total = context.dataset.data.reduce((a, b) => a + b, 0);
+            const percentage = ((context.raw / total) * 100).toFixed(1);
+            return `${context.label}: ${context.raw} (${percentage}%)`;
+          }
+        }
+      }
     },
   };
 
@@ -114,16 +131,17 @@ export const LineChart = ({ title, labels, data, label, color }) => {
     labels: labels,
     datasets: [
       {
-        label: label || 'Trend',
+        label: label || 'Demand (units)',
         data: data,
-        borderColor: color || '#4caf50',
-        backgroundColor: 'rgba(76, 175, 80, 0.1)',
+        borderColor: color || '#10b981',
+        backgroundColor: 'rgba(16, 185, 129, 0.1)',
         tension: 0.3,
         fill: true,
-        pointBackgroundColor: color || '#4caf50',
+        pointBackgroundColor: color || '#10b981',
         pointBorderColor: '#fff',
         pointBorderWidth: 2,
-        pointRadius: 5,
+        pointRadius: 4,
+        pointHoverRadius: 6,
       },
     ],
   };
@@ -133,27 +151,32 @@ export const LineChart = ({ title, labels, data, label, color }) => {
     maintainAspectRatio: false,
     plugins: {
       legend: {
-        position: 'bottom',
+        position: 'top',
+        labels: { font: { size: 12 } }
       },
-      title: {
-        display: true,
-        text: title,
-        font: { size: 16 },
-      },
+      tooltip: {
+        callbacks: {
+          label: function(context) {
+            return `Demand: ${context.raw} units`;
+          }
+        }
+      }
     },
     scales: {
       y: {
         beginAtZero: true,
-        title: {
-          display: true,
-          text: 'Units',
-        },
+        grid: { color: '#e2e8f0' },
+        title: { display: true, text: 'Demand (units per month)', font: { size: 12 } }
       },
+      x: {
+        grid: { display: false },
+        ticks: { font: { size: 11 } }
+      }
     },
   };
 
   return (
-    <div style={{ height: '300px', width: '100%' }}>
+    <div style={{ height: '320px', width: '100%' }}>
       <Line data={chartData} options={options} />
     </div>
   );

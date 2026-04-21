@@ -1,75 +1,142 @@
 import { useState, useEffect } from 'react';
-import { api } from '../services/api';
+import { api, analyticsAPI } from '../services/api';
 import { BarChart, PieChart, LineChart } from './SimpleChart';
 
 const Dashboard = () => {
   const [stats, setStats] = useState({
     totalMedicines: 0,
+    totalStock: 0,
     expiringSoon: 0,
-    lowStock: 0
+    lowStock: 0,
+    activeAlerts: 0,
+    highRiskMedicines: 0,
+    mediumRiskMedicines: 0
   });
   const [forecast, setForecast] = useState(null);
   const [loading, setLoading] = useState(true);
   const [alerts, setAlerts] = useState([]);
   const [inventory, setInventory] = useState([]);
+  const [riskReport, setRiskReport] = useState([]);
   
-  // Chart data states
   const [monthlyDemand, setMonthlyDemand] = useState({ labels: [], data: [] });
   const [topMedicines, setTopMedicines] = useState({ labels: [], data: [] });
   const [healthData, setHealthData] = useState({ labels: [], data: [], colors: [] });
 
-  useEffect(() => {
-    loadData();
-  }, []);
-
   const loadData = async () => {
     setLoading(true);
     
-    const inventoryData = await api.getInventory();
-    setInventory(inventoryData);
+    try {
+      const inventoryData = await api.getInventory();
+      setInventory(inventoryData);
+      
+      const riskData = await analyticsAPI.getRiskReport();
+      setRiskReport(riskData);
+      
+      let highRiskCount = 0;
+      let mediumRiskCount = 0;
+      
+      riskData.forEach(medicine => {
+        medicine.batches.forEach(batch => {
+          const riskLevel = String(batch.risk_level).toLowerCase();
+          if (riskLevel === 'high') {
+            highRiskCount++;
+          } else if (riskLevel === 'medium') {
+            mediumRiskCount++;
+          }
+        });
+      });
+      
+      const lowStock = inventoryData.filter(item => item.quantity < 50 && item.quantity > 0).length;
+      const totalStock = inventoryData.reduce((sum, item) => sum + item.quantity, 0);
+      
+      const todayDate = new Date();
+      const thirtyDaysLater = new Date();
+      thirtyDaysLater.setDate(todayDate.getDate() + 30);
+      
+      const expiringSoonInventory = inventoryData.filter(item => {
+        const expiry = new Date(item.expiry_date);
+        return expiry <= thirtyDaysLater && expiry >= todayDate;
+      }).length;
+      
+      setStats({
+        totalMedicines: inventoryData.length,
+        totalStock: totalStock,
+        expiringSoon: expiringSoonInventory,
+        lowStock: lowStock,
+        activeAlerts: highRiskCount + mediumRiskCount,
+        highRiskMedicines: highRiskCount,
+        mediumRiskMedicines: mediumRiskCount
+      });
+      
+      generateAlertsFromRiskData(riskData, inventoryData);
+      
+      const forecastData = await api.getForecast();
+      setForecast(forecastData);
+      
+      generateMonthlyDemandData(inventoryData);
+      generateTopMedicinesData(inventoryData);
+      generateHealthPieData(inventoryData, riskData);
+      
+    } catch (error) {
+      console.error('Error loading dashboard data:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const generateAlertsFromRiskData = (riskData, inventoryData) => {
+    const newAlerts = [];
     
-    const today = new Date();
-    const thirtyDaysLater = new Date();
-    thirtyDaysLater.setDate(today.getDate() + 30);
-    
-    const expiringSoon = inventoryData.filter(item => {
-      const expiry = new Date(item.expiry_date);
-      return expiry <= thirtyDaysLater && expiry >= today;
-    }).length;
-    
-    const lowStock = inventoryData.filter(item => item.quantity < 50).length;
-    
-    setStats({
-      totalMedicines: inventoryData.length,
-      expiringSoon: expiringSoon,
-      lowStock: lowStock
+    riskData.forEach(medicine => {
+      medicine.batches.forEach(batch => {
+        const riskLevel = String(batch.risk_level).toLowerCase();
+        if (riskLevel === 'high') {
+          newAlerts.push({
+            id: `risk-${batch.batch_id}`,
+            type: 'danger',
+            title: 'Critical Expiry Risk',
+            message: batch.risk_message || `${medicine.medicine_name} - ${batch.current_stock} units expiring soon`,
+            action: 'Take Action',
+            medicine: medicine.medicine_name
+          });
+        } else if (riskLevel === 'medium') {
+          newAlerts.push({
+            id: `risk-${batch.batch_id}`,
+            type: 'warning',
+            title: 'Expiry Warning',
+            message: batch.risk_message || `${medicine.medicine_name} needs attention`,
+            action: 'Monitor',
+            medicine: medicine.medicine_name
+          });
+        }
+      });
     });
     
-    generateAlerts(inventoryData);
+    inventoryData.forEach(item => {
+      if (item.quantity < 50 && item.quantity > 0) {
+        newAlerts.push({
+          id: `stock-${item.id}`,
+          type: 'warning',
+          title: 'Low Stock Alert',
+          message: `${item.name} has only ${item.quantity} units remaining`,
+          action: 'Order More',
+          medicine: item.name
+        });
+      }
+    });
     
-    const forecastData = await api.getForecast();
-    setForecast(forecastData);
-    
-    // Generate chart data
-    generateMonthlyDemandData(inventoryData);
-    generateTopMedicinesData(inventoryData);
-    generateHealthPieData(inventoryData);
-    
-    setLoading(false);
+    setAlerts(newAlerts.slice(0, 5));
   };
 
   const generateMonthlyDemandData = (inventoryData) => {
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    const demandData = new Array(12).fill(0);
-    
-    inventoryData.forEach(item => {
-      let demand = 0;
-      if (item.quantity < 50) demand = 80;
-      else if (item.quantity < 100) demand = 50;
-      else demand = 30;
-      
-      const randomMonth = Math.floor(Math.random() * 12);
-      demandData[randomMonth] += demand;
+    const demandData = months.map((_, monthIndex) => {
+      const seasonalFactor = (monthIndex >= 4 && monthIndex <= 7) ? 1.3 : 1.0;
+      const baseDemand = inventoryData.reduce((sum, item) => {
+        const demandContribution = item.quantity < 100 ? 80 : item.quantity < 300 ? 40 : 20;
+        return sum + demandContribution;
+      }, 0) / 12;
+      return Math.round(baseDemand * seasonalFactor * (0.8 + Math.random() * 0.4));
     });
     
     setMonthlyDemand({ labels: months, data: demandData });
@@ -80,240 +147,247 @@ const Dashboard = () => {
     const top5 = sorted.slice(0, 5);
     
     setTopMedicines({
-      labels: top5.map(item => item.name.length > 15 ? item.name.slice(0, 12) + '...' : item.name),
-      data: top5.map(item => Math.round(100 - item.quantity / 2))
+      labels: top5.map(item => item.name.length > 18 ? item.name.slice(0, 15) + '...' : item.name),
+      data: top5.map(item => item.quantity)
     });
   };
 
-  const generateHealthPieData = (inventoryData) => {
+  const generateHealthPieData = (inventoryData, riskData) => {
     let healthy = 0;
     let monitor = 0;
-    let critical = 0;
+    let lowStockCount = 0;
     let expiring = 0;
     
-    const today = new Date();
+    riskData.forEach(medicine => {
+      medicine.batches.forEach(batch => {
+        const riskLevel = String(batch.risk_level).toLowerCase();
+        if (riskLevel === 'high') {
+          expiring++;
+        } else if (riskLevel === 'medium') {
+          monitor++;
+        } else {
+          healthy++;
+        }
+      });
+    });
     
     inventoryData.forEach(item => {
-      const expiry = new Date(item.expiry_date);
-      const daysUntilExpiry = Math.ceil((expiry - today) / (1000 * 60 * 60 * 24));
-      
-      if (daysUntilExpiry <= 30) {
-        expiring++;
-      } else if (item.quantity < 50) {
-        critical++;
-      } else if (item.quantity < 100 || daysUntilExpiry <= 90) {
-        monitor++;
-      } else {
-        healthy++;
+      if (item.quantity < 50 && item.quantity > 0) {
+        lowStockCount++;
       }
     });
     
     setHealthData({
-      labels: ['🟢 Good Stock', '🟡 Monitor', '🟠 Low Stock', '🔴 Expiring Soon'],
-      data: [healthy, monitor, critical, expiring],
-      colors: ['#4caf50', '#ffc107', '#ff9800', '#f44336']
+      labels: ['Healthy Stock', 'Needs Monitoring', 'Low Stock', 'Expiring Soon'],
+      data: [healthy, monitor, lowStockCount, expiring],
+      colors: ['#22c55e', '#eab308', '#f97316', '#ef4444']
     });
   };
 
-  const generateAlerts = (inventoryData) => {
-    const newAlerts = [];
-    const today = new Date();
+  const calculateHealthScore = (inventoryData, riskData) => {
+    if (!inventoryData || inventoryData.length === 0) return { score: 100, condition: 'Good' };
     
-    inventoryData.forEach(item => {
-      const expiry = new Date(item.expiry_date);
-      const daysUntilExpiry = Math.ceil((expiry - today) / (1000 * 60 * 60 * 24));
-      
-      if (item.quantity < 50 && item.quantity > 0) {
-        newAlerts.push({
-          id: `stock-${item.id}`,
-          type: 'warning',
-          icon: '⚠️',
-          title: 'Low Stock Alert',
-          message: `${item.name} stock will run out soon`,
-          action: 'Order More',
-          medicine: item.name
-        });
-      }
-      
-      if (daysUntilExpiry <= 30 && daysUntilExpiry > 0) {
-        newAlerts.push({
-          id: `expiry-${item.id}`,
-          type: 'danger',
-          icon: '📅',
-          title: 'Expiry Alert',
-          message: `${item.name} expires in ${daysUntilExpiry} days`,
-          action: 'Send Alert',
-          medicine: item.name
-        });
-      }
+    // Count total batches for percentage calculation
+    let totalBatches = 0;
+    let highRiskCount = 0;
+    let mediumRiskCount = 0;
+    
+    riskData.forEach(medicine => {
+      medicine.batches.forEach(batch => {
+        totalBatches++;
+        const riskLevel = String(batch.risk_level).toLowerCase();
+        if (riskLevel === 'high') {
+          highRiskCount++;
+        } else if (riskLevel === 'medium') {
+          mediumRiskCount++;
+        }
+      });
     });
     
-    setAlerts(newAlerts.slice(0, 3));
-  };
-
-  const calculateHealthScore = (inventoryData) => {
-    if (inventoryData.length === 0) return { score: 100, condition: 'GOOD' };
+    // Calculate percentage of healthy batches
+    const healthyBatches = totalBatches - (highRiskCount + mediumRiskCount);
+    let score = Math.round((healthyBatches / totalBatches) * 100);
     
-    let expiringCount = 0;
-    let lowStockCount = 0;
+    // Adjust for low stock items (max 10% deduction)
+    let lowStockCount = inventoryData.filter(item => item.quantity < 50).length;
+    let lowStockPenalty = Math.min(10, Math.round((lowStockCount / inventoryData.length) * 20));
+    score -= lowStockPenalty;
     
-    inventoryData.forEach(item => {
+    // Adjust for expiring soon (max 10% deduction)
+    const todayDate = new Date();
+    const thirtyDaysLater = new Date();
+    thirtyDaysLater.setDate(todayDate.getDate() + 30);
+    const expiringSoonCount = inventoryData.filter(item => {
       const expiry = new Date(item.expiry_date);
-      const daysUntilExpiry = Math.ceil((expiry - new Date()) / (1000 * 60 * 60 * 24));
-      
-      if (daysUntilExpiry <= 30) expiringCount++;
-      if (item.quantity < 50) lowStockCount++;
-    });
+      return expiry <= thirtyDaysLater && expiry >= todayDate;
+    }).length;
+    let expiryPenalty = Math.min(10, Math.round((expiringSoonCount / inventoryData.length) * 20));
+    score -= expiryPenalty;
     
-    let score = 100;
-    score -= expiringCount * 5;
-    score -= lowStockCount * 3;
     score = Math.max(0, Math.min(100, score));
     
-    let condition = 'GOOD';
-    if (score < 50) condition = 'CRITICAL';
-    else if (score < 70) condition = 'NEEDS ATTENTION';
-    else if (score < 85) condition = 'FAIR';
+    let condition = 'Good';
+    if (score < 40) condition = 'Critical';
+    else if (score < 60) condition = 'Needs Attention';
+    else if (score < 80) condition = 'Fair';
+    
+    console.log('Health calc - Total batches:', totalBatches, 'High:', highRiskCount, 'Medium:', mediumRiskCount, 'Healthy:', healthyBatches, 'Score:', score);
     
     return { score: Math.round(score), condition };
   };
 
-  const health = calculateHealthScore(inventory);
-  const scoreColor = health.score >= 80 ? '#4caf50' : health.score >= 60 ? '#ff9800' : '#f44336';
+  useEffect(() => {
+    loadData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const health = calculateHealthScore(inventory, riskReport);
+  const scoreColor = health.score >= 80 ? '#22c55e' : health.score >= 60 ? '#eab308' : health.score >= 40 ? '#f97316' : '#ef4444';
 
   if (loading) {
-    return <div style={{ padding: '20px', textAlign: 'center' }}>Loading dashboard...</div>;
+    return (
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '400px' }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ fontSize: '24px', marginBottom: '10px' }}>📊</div>
+          <div>Loading dashboard data...</div>
+        </div>
+      </div>
+    );
   }
 
   return (
-    <div style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto' }}>
-      <h1>🏥 Pharmacy Inventory Dashboard</h1>
-      <p>Welcome to the inventory management system</p>
+    <div style={{ padding: '24px', maxWidth: '1400px', margin: '0 auto', backgroundColor: '#f8fafc', minHeight: '100vh' }}>
+      <div style={{ marginBottom: '24px' }}>
+        <h1 style={{ fontSize: '28px', fontWeight: '600', margin: '0 0 8px 0', color: '#0f172a' }}>Pharmacy Dashboard</h1>
+        <p style={{ color: '#64748b', margin: 0 }}>Real-time inventory analytics and alerts</p>
+      </div>
       
-      {/* How to Use Guide */}
-      <div style={{
-        backgroundColor: '#e8f5e9',
-        borderRadius: '10px',
-        padding: '15px',
-        marginBottom: '20px',
-        borderLeft: '4px solid #4caf50'
-      }}>
-        <strong>📖 How to Use This System</strong>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px', marginTop: '10px' }}>
-          <span>1️⃣ Add medicines to inventory</span>
-          <span>2️⃣ Check alerts daily</span>
-          <span>3️⃣ Order medicines when stock is low</span>
-          <span>4️⃣ Share surplus stock with nearby pharmacies</span>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', marginBottom: '24px' }}>
+        <div style={{ background: 'white', borderRadius: '16px', padding: '20px', boxShadow: '0 1px 3px rgba(0,0,0,0.05)', border: '1px solid #e2e8f0' }}>
+          <div style={{ fontSize: '28px', marginBottom: '8px' }}>💊</div>
+          <div style={{ fontSize: '28px', fontWeight: '700', color: '#0f172a' }}>{stats.totalMedicines}</div>
+          <div style={{ fontSize: '14px', color: '#64748b' }}>Total Medicines</div>
+          <div style={{ fontSize: '12px', color: '#94a3b8', marginTop: '4px' }}>{stats.totalStock.toLocaleString()} total units</div>
+        </div>
+        
+        <div style={{ background: 'white', borderRadius: '16px', padding: '20px', boxShadow: '0 1px 3px rgba(0,0,0,0.05)', border: '1px solid #e2e8f0' }}>
+          <div style={{ fontSize: '28px', marginBottom: '8px' }}>⚠️</div>
+          <div style={{ fontSize: '28px', fontWeight: '700', color: '#f97316' }}>{stats.activeAlerts}</div>
+          <div style={{ fontSize: '14px', color: '#64748b' }}>Active Alerts</div>
+          <div style={{ fontSize: '12px', color: '#94a3b8', marginTop: '4px' }}>{stats.highRiskMedicines} high, {stats.mediumRiskMedicines} medium risk</div>
+        </div>
+        
+        <div style={{ background: 'white', borderRadius: '16px', padding: '20px', boxShadow: '0 1px 3px rgba(0,0,0,0.05)', border: '1px solid #e2e8f0' }}>
+          <div style={{ fontSize: '28px', marginBottom: '8px' }}>📦</div>
+          <div style={{ fontSize: '28px', fontWeight: '700', color: '#f97316' }}>{stats.lowStock}</div>
+          <div style={{ fontSize: '14px', color: '#64748b' }}>Low Stock Items</div>
+          <div style={{ fontSize: '12px', color: '#94a3b8', marginTop: '4px' }}>Need reorder</div>
+        </div>
+        
+        <div style={{ background: 'white', borderRadius: '16px', padding: '20px', boxShadow: '0 1px 3px rgba(0,0,0,0.05)', border: '1px solid #e2e8f0' }}>
+          <div style={{ fontSize: '28px', marginBottom: '8px' }}>📅</div>
+          <div style={{ fontSize: '28px', fontWeight: '700', color: '#eab308' }}>{stats.expiringSoon}</div>
+          <div style={{ fontSize: '14px', color: '#64748b' }}>Expiring Within 30 Days</div>
+          <div style={{ fontSize: '12px', color: '#94a3b8', marginTop: '4px' }}>Take action now</div>
         </div>
       </div>
       
-      {/* Smart Alerts */}
+      <div style={{ background: 'white', borderRadius: '16px', padding: '24px', marginBottom: '24px', boxShadow: '0 1px 3px rgba(0,0,0,0.05)', border: '1px solid #e2e8f0', textAlign: 'center' }}>
+        <div style={{ fontSize: '14px', color: '#64748b', marginBottom: '8px' }}>Overall Inventory Health</div>
+        <div style={{ fontSize: '56px', fontWeight: '700', color: scoreColor }}>{health.score}%</div>
+        <div style={{ display: 'inline-block', background: scoreColor + '15', color: scoreColor, padding: '4px 16px', borderRadius: '20px', fontSize: '14px', fontWeight: '500', marginTop: '8px' }}>
+          {health.condition}
+        </div>
+        <div style={{ marginTop: '16px', height: '8px', background: '#e2e8f0', borderRadius: '4px', overflow: 'hidden' }}>
+          <div style={{ width: `${health.score}%`, height: '100%', background: scoreColor, borderRadius: '4px' }} />
+        </div>
+      </div>
+      
       {alerts.length > 0 && (
-        <div style={{ marginBottom: '20px' }}>
-          <h3>🚨 Pharmacy Alerts</h3>
-          {alerts.map((alert) => (
-            <div key={alert.id} style={{
-              backgroundColor: alert.type === 'danger' ? '#ffebee' : '#fff3e0',
-              borderLeft: `4px solid ${alert.type === 'danger' ? '#f44336' : '#ff9800'}`,
-              padding: '12px 15px',
-              marginBottom: '10px',
-              borderRadius: '8px',
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              flexWrap: 'wrap'
-            }}>
-              <div>
-                <strong>{alert.icon} {alert.title}</strong>
-                <div style={{ fontSize: '14px' }}>{alert.message}</div>
-              </div>
-              <button onClick={() => alert(`Action: ${alert.action} for ${alert.medicine}`)} style={{
-                padding: '6px 12px',
-                backgroundColor: alert.type === 'danger' ? '#f44336' : '#ff9800',
-                color: 'white',
-                border: 'none',
-                borderRadius: '5px',
-                cursor: 'pointer'
+        <div style={{ marginBottom: '24px' }}>
+          <h3 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '16px', color: '#0f172a' }}>🔔 Active Alerts ({alerts.length})</h3>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+            {alerts.map((alert) => (
+              <div key={alert.id} style={{
+                background: alert.type === 'danger' ? '#fef2f2' : '#fffbeb',
+                borderLeft: `4px solid ${alert.type === 'danger' ? '#ef4444' : '#f59e0b'}`,
+                borderRadius: '12px',
+                padding: '16px',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                flexWrap: 'wrap',
+                gap: '12px'
               }}>
-                {alert.action}
-              </button>
-            </div>
-          ))}
+                <div>
+                  <div style={{ fontWeight: '600', marginBottom: '4px', color: '#0f172a' }}>{alert.title}</div>
+                  <div style={{ fontSize: '14px', color: '#475569' }}>{alert.message}</div>
+                </div>
+                <button onClick={() => window.alert(`Action: ${alert.action} for ${alert.medicine}`)} style={{
+                  padding: '8px 16px',
+                  background: alert.type === 'danger' ? '#ef4444' : '#f59e0b',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '8px',
+                  cursor: 'pointer',
+                  fontSize: '13px',
+                  fontWeight: '500'
+                }}>
+                  {alert.action}
+                </button>
+              </div>
+            ))}
+          </div>
         </div>
       )}
       
-      {/* Health Score */}
-      <div style={{
-        backgroundColor: 'white',
-        borderRadius: '10px',
-        padding: '20px',
-        textAlign: 'center',
-        boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-        marginBottom: '20px'
-      }}>
-        <h3 style={{ margin: 0 }}>📊 Pharmacy Health Score</h3>
-        <p style={{ fontSize: '48px', margin: '10px 0', color: scoreColor, fontWeight: 'bold' }}>
-          {health.score} / 100
-        </p>
-        <p style={{ backgroundColor: scoreColor + '20', display: 'inline-block', padding: '5px 15px', borderRadius: '20px', color: scoreColor, fontWeight: 'bold' }}>
-          Inventory Condition: {health.condition}
-        </p>
-      </div>
-      
-      {/* Stats Cards */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px', marginBottom: '30px' }}>
-        <div style={{ padding: '20px', backgroundColor: '#e3f2fd', borderRadius: '10px', textAlign: 'center' }}>
-          <h3 style={{ margin: 0, color: '#1976d2' }}>📊 Total Medicines</h3>
-          <p style={{ fontSize: '32px', fontWeight: 'bold' }}>{stats.totalMedicines}</p>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(500px, 1fr))', gap: '24px', marginBottom: '24px' }}>
+        <div style={{ background: 'white', borderRadius: '16px', padding: '20px', boxShadow: '0 1px 3px rgba(0,0,0,0.05)', border: '1px solid #e2e8f0' }}>
+          <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '4px', color: '#0f172a' }}>Monthly Demand Forecast</h3>
+          <p style={{ fontSize: '13px', color: '#64748b', marginBottom: '16px' }}>Projected demand based on inventory levels</p>
+          <LineChart labels={monthlyDemand.labels} data={monthlyDemand.data} label="Demand (units)" color="#10b981" />
         </div>
-        <div style={{ padding: '20px', backgroundColor: '#ffebee', borderRadius: '10px', textAlign: 'center' }}>
-          <h3 style={{ margin: 0, color: '#c62828' }}>⚠️ Medicines Expiring Soon</h3>
-          <p style={{ fontSize: '32px', fontWeight: 'bold' }}>{stats.expiringSoon}</p>
-        </div>
-        <div style={{ padding: '20px', backgroundColor: '#fff3e0', borderRadius: '10px', textAlign: 'center' }}>
-          <h3 style={{ margin: 0, color: '#ef6c00' }}>📦 Medicines Running Out</h3>
-          <p style={{ fontSize: '32px', fontWeight: 'bold' }}>{stats.lowStock}</p>
+        
+        <div style={{ background: 'white', borderRadius: '16px', padding: '20px', boxShadow: '0 1px 3px rgba(0,0,0,0.05)', border: '1px solid #e2e8f0' }}>
+          <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '4px', color: '#0f172a' }}>Top Medicines by Stock</h3>
+          <p style={{ fontSize: '13px', color: '#64748b', marginBottom: '16px' }}>Highest inventory quantities</p>
+          <BarChart labels={topMedicines.labels} data={topMedicines.data} label="Stock Quantity" colors="rgba(34, 197, 94, 0.7)" />
         </div>
       </div>
       
-      {/* Graph 1: Monthly Demand Trend */}
-      <div style={{ backgroundColor: 'white', borderRadius: '10px', padding: '20px', marginBottom: '20px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
-        <h3>📈 Monthly Medicine Demand Trend</h3>
-        <p style={{ color: '#666', marginBottom: '20px' }}>Shows seasonal trends - when demand increases</p>
-        <LineChart title="Demand Trend" labels={monthlyDemand.labels} data={monthlyDemand.data} label="Units Demanded" color="#4caf50" />
-      </div>
-      
-      {/* Graph 2: Top Selling Medicines */}
-      <div style={{ backgroundColor: 'white', borderRadius: '10px', padding: '20px', marginBottom: '20px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
-        <h3>🏆 Top Selling Medicines</h3>
-        <p style={{ color: '#666', marginBottom: '20px' }}>Most popular medicines - keep good stock</p>
-        <BarChart title="Top 5 Medicines by Demand" labels={topMedicines.labels} data={topMedicines.data} label="Demand Score" colors="rgba(76, 175, 80, 0.6)" />
-      </div>
-      
-      {/* Graph 3: Inventory Health Pie Chart */}
-      <div style={{ backgroundColor: 'white', borderRadius: '10px', padding: '20px', marginBottom: '20px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
-        <h3>🥧 Inventory Health Status</h3>
-        <p style={{ color: '#666', marginBottom: '20px' }}>Quick view of your inventory condition</p>
-        <PieChart title="Stock Health Distribution" labels={healthData.labels} data={healthData.data} colors={healthData.colors} />
-      </div>
-      
-      {/* Forecast Section */}
-      <div style={{ marginTop: '20px', padding: '20px', backgroundColor: '#f0f0f0', borderRadius: '10px' }}>
-        <h3>📈 Medicines You Should Order Soon</h3>
-        {forecast ? (
-          <>
-            <p>{forecast.message}</p>
-            {forecast.recommendations && (
-              <ul>
-                {forecast.recommendations.map((rec, idx) => (
-                  <li key={idx}>{rec.medicine}: Order <strong>{rec.recommendedOrder} units</strong></li>
-                ))}
-              </ul>
-            )}
-          </>
-        ) : (
-          <p>Add more sales data to see recommendations</p>
-        )}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '24px' }}>
+        <div style={{ background: 'white', borderRadius: '16px', padding: '20px', boxShadow: '0 1px 3px rgba(0,0,0,0.05)', border: '1px solid #e2e8f0' }}>
+          <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '4px', color: '#0f172a' }}>Inventory Health Distribution</h3>
+          <p style={{ fontSize: '13px', color: '#64748b', marginBottom: '16px' }}>Breakdown by stock status</p>
+          <PieChart labels={healthData.labels} data={healthData.data} colors={healthData.colors} />
+        </div>
+        
+        <div style={{ background: 'white', borderRadius: '16px', padding: '20px', boxShadow: '0 1px 3px rgba(0,0,0,0.05)', border: '1px solid #e2e8f0' }}>
+          <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '4px', color: '#0f172a' }}>AI-Powered Recommendations</h3>
+          <p style={{ fontSize: '13px', color: '#64748b', marginBottom: '16px' }}>Actionable insights from analytics</p>
+          {forecast ? (
+            <div>
+              <div style={{ background: '#f0fdf4', padding: '16px', borderRadius: '12px', marginBottom: '16px' }}>
+                <div style={{ fontWeight: '500', marginBottom: '8px' }}>📋 Summary</div>
+                <div style={{ fontSize: '14px', color: '#166534' }}>{forecast.message}</div>
+              </div>
+              {forecast.recommendations && forecast.recommendations.length > 0 && (
+                <div>
+                  <div style={{ fontWeight: '500', marginBottom: '8px' }}>🎯 Recommended Actions</div>
+                  <ul style={{ margin: 0, paddingLeft: '20px' }}>
+                    {forecast.recommendations.slice(0, 3).map((rec, idx) => (
+                      <li key={idx} style={{ marginBottom: '8px', fontSize: '14px', color: '#475569' }}>
+                        <strong>{rec.medicine}</strong>: {rec.action || `Order ${rec.recommendedOrder} units`}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          ) : (
+            <p style={{ color: '#64748b' }}>Loading recommendations...</p>
+          )}
+        </div>
       </div>
     </div>
   );

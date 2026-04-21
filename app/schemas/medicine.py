@@ -5,25 +5,7 @@ from pydantic import BaseModel, Field
 from datetime import date, datetime
 from typing import Optional, List
 
-# Medicine schemas
-class MedicineBase(BaseModel):
-    name: str
-    generic_name: Optional[str] = None
-    category: Optional[str] = None
-    manufacturer: Optional[str] = None
-
-class MedicineCreate(MedicineBase):
-    pass
-
-class MedicineResponse(MedicineBase):
-    id: int
-    created_at: datetime
-    updated_at: Optional[datetime] = None
-    
-    class Config:
-        from_attributes = True
-
-# Batch schemas
+# Batch schemas - define FIRST before MedicineResponse uses it
 class BatchBase(BaseModel):
     batch_number: str
     expiry_date: date
@@ -38,6 +20,25 @@ class BatchResponse(BatchBase):
     id: int
     medicine_id: int
     created_at: datetime
+    
+    class Config:
+        from_attributes = True
+
+# Medicine schemas
+class MedicineBase(BaseModel):
+    name: str
+    generic_name: Optional[str] = None
+    category: Optional[str] = None
+    manufacturer: Optional[str] = None
+
+class MedicineCreate(MedicineBase):
+    pass
+
+class MedicineResponse(MedicineBase):
+    id: int
+    created_at: datetime
+    updated_at: Optional[datetime] = None
+    batches: List[BatchResponse] = []  # Now BatchResponse is defined
     
     class Config:
         from_attributes = True

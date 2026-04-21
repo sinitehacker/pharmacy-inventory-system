@@ -2,7 +2,7 @@
 Inventory API Routes - CRUD operations for medicines and batches
 """
 from fastapi import APIRouter, Depends, HTTPException, status
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, joinedload
 from typing import List
 
 from app.database.database import get_db
@@ -39,14 +39,14 @@ async def get_medicines(
     limit: int = 100,
     db: Session = Depends(get_db)
 ):
-    """Get all medicines"""
-    medicines = db.query(Medicine).offset(skip).limit(limit).all()
+    """Get all medicines with their batches"""
+    medicines = db.query(Medicine).options(joinedload(Medicine.batches)).offset(skip).limit(limit).all()
     return medicines
 
 @router.get("/medicines/{medicine_id}", response_model=MedicineResponse)
 async def get_medicine(medicine_id: int, db: Session = Depends(get_db)):
-    """Get a specific medicine"""
-    medicine = db.query(Medicine).filter(Medicine.id == medicine_id).first()
+    """Get a specific medicine with its batches"""
+    medicine = db.query(Medicine).options(joinedload(Medicine.batches)).filter(Medicine.id == medicine_id).first()
     if not medicine:
         raise HTTPException(status_code=404, detail="Medicine not found")
     return medicine
@@ -74,6 +74,20 @@ async def get_medicine_batches(medicine_id: int, db: Session = Depends(get_db)):
     """Get all batches for a medicine"""
     batches = db.query(Batch).filter(Batch.medicine_id == medicine_id).all()
     return batches
+
+# Batch delete endpoint (optional, useful for cleanup)
+@router.delete("/batches/{batch_id}", status_code=status.HTTP_204_NO_CONTENT)
+async def delete_batch(
+    batch_id: int,
+    db: Session = Depends(get_db)
+):
+    """Delete a batch"""
+    batch = db.query(Batch).filter(Batch.id == batch_id).first()
+    if not batch:
+        raise HTTPException(status_code=404, detail="Batch not found")
+    db.delete(batch)
+    db.commit()
+    return None
 
 # Sale endpoints
 @router.post("/sales", response_model=SaleResponse, status_code=status.HTTP_201_CREATED)
@@ -112,4 +126,15 @@ async def get_sales(
 ):
     """Get all sales"""
     sales = db.query(Sale).offset(skip).limit(limit).all()
+    return sales
+
+@router.get("/sales/medicine/{medicine_id}", response_model=List[SaleResponse])
+async def get_sales_by_medicine(
+    medicine_id: int,
+    skip: int = 0,
+    limit: int = 100,
+    db: Session = Depends(get_db)
+):
+    """Get all sales for a specific medicine"""
+    sales = db.query(Sale).filter(Sale.medicine_id == medicine_id).offset(skip).limit(limit).all()
     return sales
