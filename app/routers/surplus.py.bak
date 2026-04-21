@@ -1,0 +1,47 @@
+"""
+Surplus API Routes
+"""
+from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy.orm import Session
+from typing import List
+
+from app.database.database import get_db
+from app.schemas.surplus import SurplusCreate, SurplusResponse
+from app.models.pharmacy import Pharmacy
+from app.models.surplus import SurplusListing
+
+router = APIRouter(prefix="/api/surplus", tags=["Surplus"])
+
+@router.post("/", response_model=SurplusResponse)
+async def create_surplus(
+    surplus: SurplusCreate,
+    db: Session = Depends(get_db)
+):
+    """Create a surplus listing"""
+    pharmacy = db.query(Pharmacy).filter(Pharmacy.id == surplus.pharmacy_id).first()
+    if not pharmacy:
+        raise HTTPException(status_code=404, detail="Pharmacy not found")
+    
+    db_surplus = SurplusListing(
+        pharmacy_id=surplus.pharmacy_id,
+        medicine_name=surplus.medicine_name,
+        quantity=surplus.quantity,
+        expiry_date=surplus.expiry_date,
+        status="active"
+    )
+    db.add(db_surplus)
+    db.commit()
+    db.refresh(db_surplus)
+    return db_surplus
+
+@router.get("/{pharmacy_id}", response_model=List[SurplusResponse])
+async def get_surplus(
+    pharmacy_id: int,
+    db: Session = Depends(get_db)
+):
+    """Get all surplus listings for a pharmacy"""
+    surplus = db.query(SurplusListing).filter(
+        SurplusListing.pharmacy_id == pharmacy_id,
+        SurplusListing.status == "active"
+    ).all()
+    return surplus
