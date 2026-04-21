@@ -2,6 +2,11 @@
 
 const API_BASE_URL = 'http://localhost:8000/api';
 
+// Helper function to get pharmacy_id from localStorage
+const getPharmacyId = () => {
+  return localStorage.getItem('pharmacy_id') || 1;
+};
+
 // Helper function for API calls
 async function apiCall(endpoint, options = {}) {
   try {
@@ -24,32 +29,47 @@ async function apiCall(endpoint, options = {}) {
   }
 }
 
-// Inventory APIs
+// Inventory APIs with pharmacy_id
 export const inventoryAPI = {
-  getAllMedicines: () => apiCall('/inventory/medicines'),
-  addMedicine: (medicineData) => apiCall('/inventory/medicines', {
-    method: 'POST',
-    body: JSON.stringify({
-      name: medicineData.name,
-      generic_name: medicineData.generic_name || '',
-      category: medicineData.category || '',
-      manufacturer: medicineData.manufacturer || ''
-    })
-  }),
-  addBatch: (batchData) => apiCall('/inventory/batches', {
-    method: 'POST',
-    body: JSON.stringify(batchData)
-  }),
-  recordSale: (saleData) => apiCall('/inventory/sales', {
-    method: 'POST',
-    body: JSON.stringify(saleData)
-  }),
-  deleteMedicine: (id) => apiCall(`/inventory/medicines/${id}`, {
-    method: 'DELETE'
-  })
+  getAllMedicines: () => {
+    const pharmacyId = getPharmacyId();
+    return apiCall(`/inventory/medicines?pharmacy_id=${pharmacyId}`);
+  },
+  addMedicine: (medicineData) => {
+    const pharmacyId = getPharmacyId();
+    return apiCall(`/inventory/medicines?pharmacy_id=${pharmacyId}`, {
+      method: 'POST',
+      body: JSON.stringify({
+        name: medicineData.name,
+        generic_name: medicineData.generic_name || '',
+        category: medicineData.category || '',
+        manufacturer: medicineData.manufacturer || ''
+      })
+    });
+  },
+  addBatch: (batchData) => {
+    const pharmacyId = getPharmacyId();
+    return apiCall(`/inventory/batches?pharmacy_id=${pharmacyId}`, {
+      method: 'POST',
+      body: JSON.stringify(batchData)
+    });
+  },
+  recordSale: (saleData) => {
+    const pharmacyId = getPharmacyId();
+    return apiCall(`/inventory/sales?pharmacy_id=${pharmacyId}`, {
+      method: 'POST',
+      body: JSON.stringify(saleData)
+    });
+  },
+  deleteMedicine: (id) => {
+    const pharmacyId = getPharmacyId();
+    return apiCall(`/inventory/medicines/${id}?pharmacy_id=${pharmacyId}`, {
+      method: 'DELETE'
+    });
+  }
 };
 
-// Analytics APIs
+// Analytics APIs (these don't need pharmacy_id as they use risk report)
 export const analyticsAPI = {
   getDashboard: () => apiCall('/analytics/dashboard'),
   getStats: () => apiCall('/analytics/dashboard/stats'),
@@ -65,14 +85,16 @@ export const api = {
   async getInventory() {
     try {
       const medicines = await inventoryAPI.getAllMedicines();
+      console.log(`Fetched ${medicines.length} medicines for pharmacy ${getPharmacyId()}`);
       return medicines.map(med => ({
         id: med.id,
         name: med.name,
-        quantity: med.batches?.reduce((sum, b) => sum + b.quantity, 0) || 0,
+        quantity: med.batches?.reduce((sum, b) => sum + (b.quantity || 0), 0) || 0,
         expiry_date: med.batches?.[0]?.expiry_date || '2025-12-31',
         generic_name: med.generic_name,
         category: med.category,
-        manufacturer: med.manufacturer
+        manufacturer: med.manufacturer,
+        batches: med.batches || []
       }));
     } catch (error) {
       console.error('Failed to fetch inventory:', error);
@@ -134,7 +156,7 @@ export const api = {
         message += `there are ${dashboard.critical_alerts} critical expiry alerts. `;
       }
       
-      if (highRisk.length > 0) {
+      if (highRisk && highRisk.length > 0) {
         message += `${highRisk.length} medicines require immediate attention. `;
         recommendations.push(...highRisk.slice(0, 3).map(risk => ({
           medicine: risk.medicine_name,
@@ -143,7 +165,11 @@ export const api = {
         })));
       }
       
-      if (recommendations.length === 0) {
+      if (dashboard.reorder_needed > 0) {
+        message += `${dashboard.reorder_needed} medicines need reordering.`;
+      }
+      
+      if (recommendations.length === 0 && dashboard.critical_alerts === 0) {
         message = "All medicines are within acceptable inventory levels. Continue monitoring expiry dates.";
       }
       
