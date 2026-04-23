@@ -3,10 +3,10 @@ Main FastAPI Application
 """
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routers import inventory, analytics, pharmacy_network
-from app.routers import matching
-from app.routers import orders, notifications
-from app.routers import auth
+from app.routers import inventory, analytics, pharmacy_network, matching, orders, notifications, auth, decisions, ml_dashboard, ml_predictions
+from app.routers import expiry_risk
+from app.routers import ml_metrics
+from app.routers import transfer_requests
 from app.database.database import engine, Base
 
 # Create database tables
@@ -36,6 +36,12 @@ app.include_router(matching.router)
 app.include_router(orders.router)
 app.include_router(notifications.router)
 app.include_router(auth.router)
+app.include_router(decisions.router)
+app.include_router(ml_dashboard.router)
+app.include_router(ml_predictions.router)
+app.include_router(expiry_risk.router)
+app.include_router(ml_metrics.router)
+app.include_router(transfer_requests.router)
 
 @app.get("/")
 async def root():
